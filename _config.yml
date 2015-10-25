@@ -1,0 +1,21 @@
+baseurl: ""
+url: "http://www.bernac.org"
+encoding: utf-8
+permalink: pretty
+markdown: kramdown
+
+kramdown:
+  auto_id_stripping: true
+
+sass:
+  sass_dir: _sass
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "works"
+
+exclude: ['README.md','Gemfile.lock','.gitignore','bower_components','bower.json']

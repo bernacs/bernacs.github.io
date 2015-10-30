@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% for collection in site.collections %}
+  {% if collection[1].label == page.collection %}
+    {% assign current = collection[1] %}
+	{% endif %}
+{% endfor %}
+
+<article>
+	<header>
+		<h1>{{ page.title }}</h1>
+			{{ content }}
+		</header>
+	<hr />
+	{% for page in current.docs %}
+	<section>
+		<h2 id="{{ page.title | slugify }}">{{ page.title }}</h2>
+		{{ page.content | markdownify }}
+		<hr />
+	</section>
+	{% endfor %}
+</article>

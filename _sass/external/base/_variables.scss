@@ -16,17 +16,26 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
-$dark-gray: #333;
+$blue:        #477dca;
+$dark-gray:   #333;
 $medium-gray: #999;
-$light-gray: #ddd;
+$light-gray:  #ddd;
+
+// Swiss Style Colors
+$swiss-light-gray:  #dfe0e2;
+$swiss-medium-gray: #a5a6a9;
+$swiss-dark-gray:   #2f292b;
+$swiss-red:         #f45844;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+//$base-font-color: $dark-gray;
+//$action-color: $blue;
+$base-font-color: $swiss-dark-gray;
+$action-color:		$swiss-red;
 
 // Border
-$base-border-color: $light-gray;
+//$base-border-color: $light-gray;
+$base-border-color: $swiss-light-gray;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors

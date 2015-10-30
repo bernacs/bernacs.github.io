@@ -1,2 +1,19 @@
+---
+exclude: yes
+---
+
 @import "external/external-dir";
-@import "colours";
+@import "components/containers";
+
+ol {
+	list-style-type: decimal;
+  padding-left: 1em;
+}
+
+li {
+	ul {
+		li {
+			margin-left: 1em;
+		}
+	}
+}

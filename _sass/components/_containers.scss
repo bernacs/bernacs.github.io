@@ -1,4 +1,4 @@
-div.top-container {
+.top-container {
 	// @include media($medium-down) {
 	// 	@include outer-container($medium);
 	// };
@@ -9,18 +9,91 @@ div.top-container {
 		@include outer-container($very-large);
 	};
 
-	nav {
-		@include span-columns(3);
+	header#main {
+		@include span-columns( 12 );
+		@include padding(1em 1em 1em 1em);
+		//@include fill-parent;
+		@include background( rgba($swiss-light-gray, 0.5) );
+		@include margin(null null 1em null);
+
+		h1#site {
+			font-size: 2 * $base-font-size;
+			margin-bottom: 0;
+		}
 	}
 
-	.content {
-		@include span-columns(6);
-		//@include shift(3);
+	footer#main {
+		@include span-columns( 12 );
+		@include padding(1em 1em 1em 1em);
+		//@include fill-parent;
+		@include background( rgba($swiss-light-gray, 0.5) );
+		@include margin(1em null null null);
 
+		.copyright {
 
-		blockquote {
-			font-style: italic;
 		}
 
 	}
+
+}
+
+.main-container {
+	//@include padding(1em 1em 1em 1em);	
+	@include span-columns( 12 );
+	@include fill-parent;
+	@include calc(min-height, '100vh - 5em' );
+	
+	nav {
+		@include padding(null null null 1em);
+		@include span-columns( 3 of 12 );
+	}
+
+	.content {
+		@include padding(null 1em null null);
+
+		header {
+			@include background( none left repeat );
+		}
+
+		@include span-columns( 9 of 12 );
+
+		article {
+
+			section {
+				h1 {
+
+					span {
+						opacity: 0;
+						@include transition( opacity 0.1s ease-in );
+					}
+
+				}
+
+				h1:hover {
+
+					span {
+						opacity: 1;
+					}
+				}
+
+			}
+
+		}
+	}
+
+}
+
+blockquote {
+	font-style: italic;
+}
+
+p {
+	text-align: justify;
+	text-align-last: left;
+	@include hyphens( auto );
+	text-justify: auto;
+}
+
+body {
+	@include margin(0 0 0 0);
 }

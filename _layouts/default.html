@@ -1,7 +1,20 @@
 ---
-layout: base
 ---
- 	
-  <main class="content">
-    {{ content }}
-  </main>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="top-container">
+    	{% include header.html %}
+    	<div class="main-container">
+    		{% include nav.html %}
+    		<div class="content">
+    			{{ content }}
+    		</div>
+    	</div>
+    	{% include footer.html %}
+    </div>
+  </body>
+</html>

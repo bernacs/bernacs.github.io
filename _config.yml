@@ -11,6 +11,9 @@ kramdown:
 sass:
   sass_dir: _sass
 
+css_dir: assets/css
+js_dir: assets/js
+
 exclude: ['README.md', 'Gemfile','Gemfile.lock','.gitignore','bernac.sublime-project', 'bernac.sublime-workspace']
 
 collections:

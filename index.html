@@ -3,28 +3,3 @@ layout: default
 exclude: yes
 title: Root index
 ---
-
-<ul>
-{% for page in site.pages reversed %}
-	{% unless page.exclude %}
-	   <li><a href="{{url}}{{page.url}}">{{page.title}}</a>
-	   <ul>
-	   	{% for collection in site.collections %}
-	   		<!-- {{ page.url }}; {{ collection[1].link }} -->
-	   		{% if page.url == collection[1].link %}
-	   			{% for item in collection[1].docs %}
-	   				<li>
-	   					<ul>
-	   						<li><a href="{{ item.url }}">Permalink: {{ item.title }}</a></li>
-	   						<li><a href="{{ page.url }}#{{ item.title | slugify }}">Header link: {{ item.title }}</a></li>
-	   					</ul>
-	   				</li>
-	   			{% endfor %}
-	   		{% else %}
-	   		{% endif %}
-	   	{% endfor %}
-	   	</ul>
-	   </li>
-	{% endunless %}
-{% endfor %}
-</ul>

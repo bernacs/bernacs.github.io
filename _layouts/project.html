@@ -16,9 +16,13 @@ layout: default
 	<hr />
 	{% for page in current.docs %}
 	<section>
-		<h2 id="{{ page.title | slugify }}">{{ page.title }}</h2>
+		<h1 id="{{ page.title | slugify }}">
+			{{ page.title }}  <span><a href="{{ page.url }}">§</a></span>
+		</h1>
 		{{ page.content | markdownify }}
+		{% unless forloop.last %}
 		<hr />
+		{% endunless %}
 	</section>
 	{% endfor %}
 </article>

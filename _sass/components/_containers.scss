@@ -21,35 +21,22 @@
 			margin-bottom: 0;
 		}
 	}
-
-	footer#main {
-		@include span-columns( 12 );
-		@include padding(1em 1em 1em 1em);
-		//@include fill-parent;
-		@include background( rgba($swiss-light-gray, 0.5) );
-		@include margin(1em null null null);
-
-		.copyright {
-
-		}
-
-	}
-
 }
 
 .main-container {
-	//@include padding(1em 1em 1em 1em);	
 	@include span-columns( 12 );
-	@include fill-parent;
 	@include calc(min-height, '100vh - 5em' );
 	
 	nav {
 		@include padding(null null null 1em);
 		@include span-columns( 3 of 12 );
+		text-align: left;
+		text-align-last: left;
+		text-justify: auto;
 	}
 
 	.content {
-		@include padding(null 1em null null);
+		//@include padding(null 1em null null);
 
 		header {
 			@include background( none left repeat );
@@ -81,6 +68,15 @@
 		}
 	}
 
+	footer {
+		//@include padding(1em 1em 1em 1em);
+		@include background( rgba($swiss-light-gray, 0.5) );
+		@include margin(1em null null null);
+		text-align: right;
+
+		.copyright {
+		}
+	}
 }
 
 blockquote {
@@ -96,4 +92,20 @@ p {
 
 body {
 	@include margin(0 0 0 0);
+}
+
+li.work {
+	padding-left: 0.5em;
+}
+
+li.active {
+	@include background( linear-gradient(red, green) left repeat );
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+li.current-nav {
+	background-color: #333;
 }

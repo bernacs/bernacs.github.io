@@ -1,6 +1,6 @@
 ---
 layout: work
-title: Work 2 - Project 2
+title: Nutritional benefits of topinambur consumption
 ---
 
 ### Some more work

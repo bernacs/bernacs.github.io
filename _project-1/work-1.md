@@ -1,6 +1,7 @@
 ---
 layout: work
-title: Work 1 - Project 1
+#title: Work 1 - Project 1
+title: Stabilisation of fluid points
 ---
 
 ### Here's some work

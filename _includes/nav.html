@@ -1,24 +1,22 @@
-<nav>
-	<div class="navigation">
-		<ul>
-		{% for page in site.pages reversed %}
-			{% unless page.exclude %}
-			<li><a href="{{page.url}}">{{page.title}}</a>
-				{% for collection in site.collections %}
-	   		{% if page.url == collection[1].link %}
-	   		<ul>
-			 		{% for item in collection[1].docs %}
-					<li>
-						<a href="{{ page.url }}#{{ item.title | slugify }}">H: {{ item.title }}</a>
-				  </li>
-					{% endfor %}
-			 	</ul>
-		 		{% else %}
-		 		{% endif %}
-			 	{% endfor %}
-			</li>
-			{% endunless %}
-		{% endfor %}
-		</ul>
-	</div>
+<nav class="sticky" role="navigation">
+	<ul>
+	{% for page in site.pages reversed %}
+		{% unless page.exclude %}
+		<li class="page"><a href="{{page.url}}">{{page.title}}</a>
+			{% for collection in site.collections %}
+   		{% if page.url == collection[1].link %}
+   		<ul>
+		 		{% for item in collection[1].docs %}
+				<li class="work">
+					<a href="{{ page.url }}#{{ item.title | slugify }}">{{ item.title }}</a>
+			  </li>
+				{% endfor %}
+		 	</ul>
+	 		{% else %}
+	 		{% endif %}
+		 	{% endfor %}
+		</li>
+		{% endunless %}
+	{% endfor %}
+	</ul>
 </nav>

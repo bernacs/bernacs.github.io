@@ -10,11 +10,14 @@
     	{% include header.html %}
     	<div class="main-container">
     		{% include nav.html %}
-    		<div class="content">
+    		<main class="content">
     			{{ content }}
-    		</div>
+    		</main>
     	</div>
-    	{% include footer.html %}
     </div>
+  <script type="text/javascript">
+  	$('nav.sticky').fixTo('.main-container');
+  </script>
+  <script type="text/javascript" src="{{site.baseurl}}/{{site.js_dir}}/heading-navigation.js"></script>
   </body>
 </html>

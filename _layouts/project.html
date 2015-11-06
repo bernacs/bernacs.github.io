@@ -8,21 +8,23 @@ layout: default
 	{% endif %}
 {% endfor %}
 
-<article>
-	<header>
+<article class="project">
+	<header class="project-header">
 		<h1>{{ page.title }}</h1>
 			{{ content }}
 		</header>
-	<hr />
-	{% for page in current.docs %}
-	<section>
-		<h1 id="{{ page.title | slugify }}">
-			{{ page.title }}  <span><a href="{{ page.url }}">§</a></span>
+	<hr class="project-rule" />
+	{% for work in current.docs %}
+	{% assign slug = work.title | slugify %}
+	<section data-work="{{ slug }}" data-appear-top-offset="0" class="work">
+		<h1 id="{{ slug }}">
+			{{ work.title }}  <span class "permalink"><a href="{{ work.url }}"><i class="fa fa-link fa-flip-vertical"></i></a></span>
 		</h1>
-		{{ page.content | markdownify }}
+		{{ work.content | markdownify }}
 		{% unless forloop.last %}
 		<hr />
 		{% endunless %}
 	</section>
 	{% endfor %}
+	{% include footer.html %}
 </article>

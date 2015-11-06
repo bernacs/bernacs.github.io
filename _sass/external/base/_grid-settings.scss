@@ -4,12 +4,12 @@
 // $column: 90px;
 // $gutter: 30px;
 $grid-columns: 12;
-$max-width: 1024px;
+$max-width: 1280px;
 
 // Neat Breakpoints
 $medium: 600px;
 $large: 900px;
-$very-large: 1024px;
+$very-large: 1280px;
 
 $medium-down: new-breakpoint(max-width $medium 4);
 $large-up: new-breakpoint(min-width $large 12);

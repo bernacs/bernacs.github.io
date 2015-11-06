@@ -1,4 +1,19 @@
-		<title>{{ page.title | prepend: "Sonia Bernac » " }}</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="{{site.baseurl}}/{{site.css_dir}}/main.css" />
+<title>{{ page.title | prepend: "Sonia Bernac » " }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- css -->
+{% if include.alt_css %}
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/{{site.css_dir}}/{{ include.alt_css }}" />
+{% else %}
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/{{site.css_dir}}/main.css" />
+{% endif %}
+<!-- fontAwesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- js -->
+<!-- jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- jQuery plugins -->
+<!-- fixTo -->
+<script type="text/javascript" src="https://raw.githubusercontent.com/bbarakaci/fixto/master/dist/fixto.js"></script>
+<!-- appear -->
+<script type="text/javascript" src="https://raw.githubusercontent.com/morr/jquery.appear/master/jquery.appear.js"></script>

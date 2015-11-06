@@ -1,6 +1,7 @@
 ---
 layout: work
-title: Work 1 - Project 2
+#title: Work 1 - Project 2
+title: Local theories of aerodynamics
 ---
 
 ### Here's some work

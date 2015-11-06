@@ -1,6 +1,6 @@
 ---
 layout: work
-title: Work 2 - Project 1
+title: Critical point of looseness
 ---
 
 ### Some more work

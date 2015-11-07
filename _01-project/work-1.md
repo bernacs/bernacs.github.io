@@ -1,6 +1,7 @@
 ---
 layout: work
 title: Stabilisation of fluid points
+published: true
 ---
 
 ## Here's some work

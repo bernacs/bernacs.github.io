@@ -11,7 +11,6 @@ kramdown:
 sass:
   sass_dir: _sass
 
-assets_dir: assets
 css_dir: assets/css
 js_dir: assets/js
 png_dir: assets/png
@@ -30,3 +29,8 @@ collections:
     link: /project-2/
     output: true
     permalink: /project-2/:title/
+
+# Prose.io configuration
+prose:
+  siteurl: "https://bernacs.github.io"
+  media: "/assets/img/"

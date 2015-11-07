@@ -4,7 +4,7 @@ layout: default
 
 <article>
 	{% assign slug = page.title | slugify %}
-	<section data-work="{{ slug }}" class="work">
+	<section class="work" data-work="{{ slug }}">
 		<h1 id="{{ slug }}">
 			{{ page.title }}  <span class "permalink"><a href="{{ page.url }}"><i class="fa fa-link fa-flip-vertical"></i></a></span>
 		</h1>

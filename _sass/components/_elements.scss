@@ -1,0 +1,116 @@
+// lists
+// ————————————————————————————————————————————————————————————————————————————
+
+// unordered, ordered list
+ul {
+
+	& {
+	  list-style-type: disc;
+	  margin-bottom: $small-spacing;
+	}
+
+  nav & {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  }
+}
+
+ol {
+  list-style-type: decimal;
+
+  .footnotes & {
+  	padding-left: $base-spacing;
+  }
+}
+
+// definition list
+dl {
+  margin-bottom: $small-spacing;
+
+  dt {
+    font-weight: bold;
+    margin-top: $small-spacing;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+// other
+// ————————————————————————————————————————————————————————————————————————————
+
+// horizontal rule
+hr {
+	@include border-width(null null 1px null);
+	@include margin($base-spacing null $base-spacing null);
+
+	&.project-hr {
+		@include border-style(solid none none none);
+	}
+
+	&.work-hr {
+		@include border-style(dashed none none none);
+	}
+}
+
+// images
+img, picture {
+	@include margin(0 auto 0 auto);
+	max-width: 100%;
+	display: block;
+}
+
+// single elements
+// ————————————————————————————————————————————————————————————————————————————
+
+section {
+	h1 {
+		span {
+			opacity: 0;
+			@include transition (opacity 0.1s ease-in);
+		}
+
+		&:hover {
+			span {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+span.copyright {
+
+}
+
+li {
+	&.work {
+		padding-left: $small-spacing;
+	}
+	&.project {
+
+	}
+}
+
+// backgrounds
+// ————————————————————————————————————————————————————————————————————————————
+
+header#main {
+	@include background($header-background);
+}
+
+nav {
+	@include background($header-background);	
+}
+
+body {
+	@include background($body-background);
+
+	&.front {
+		/* background from subtlepattern.com */
+		// @include background(url(/assets/png/noisy_grid_120.png));
+		@include background-image($body-background, url(/assets/png/noisy_grid_120.png));
+		// background: transparent url(/assets/png/noisy_grid_150.png) repeat scroll 100% 100%;
+	}
+}

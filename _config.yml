@@ -11,21 +11,26 @@ kramdown:
 sass:
   sass_dir: _sass
 
+assets_dir: assets
 css_dir: assets/css
 js_dir: assets/js
+png_dir: assets/png
+img_dir: assets/img
 
 exclude: ['README.md', 'Gemfile','Gemfile.lock','.gitignore','bernac.sublime-project', 'bernac.sublime-workspace']
 
 collections:
-- project-1
-- project-2
+- 02-project
+- 01-project
 
+# can override collection links and permalinks by changing respective index permalink
+# they must, however, be the same to ensure proper rendering
 collections:
-  project-1:
-    link: /project-1/
+  01-project:
+    link: /01-project/
     output: true
-    permalink: /project-1/:title/
-  project-2:
-    link: /project-2/
+    permalink: /01-project/:title/
+  02-project:
+    link: /02-project/
     output: true
-    permalink: /project-2/:title/
+    permalink: /02-project/:title/

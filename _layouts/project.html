@@ -8,21 +8,21 @@ layout: default
 	{% endif %}
 {% endfor %}
 
-<article class="project">
+<article>
 	<header class="project-header">
 		<h1>{{ page.title }}</h1>
 			{{ content }}
 		</header>
-	<hr class="project-rule" />
+	<hr class="project-hr" />
 	{% for work in current.docs %}
 	{% assign slug = work.title | slugify %}
-	<section data-work="{{ slug }}" data-appear-top-offset="0" class="work">
+	<section class="work" data-work="{{ slug }}">
 		<h1 id="{{ slug }}">
 			{{ work.title }}  <span class "permalink"><a href="{{ work.url }}"><i class="fa fa-link fa-flip-vertical"></i></a></span>
 		</h1>
 		{{ work.content | markdownify }}
 		{% unless forloop.last %}
-		<hr />
+		<hr class="work-hr"/>
 		{% endunless %}
 	</section>
 	{% endfor %}

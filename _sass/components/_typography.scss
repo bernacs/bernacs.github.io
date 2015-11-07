@@ -1,0 +1,64 @@
+body {
+	color: $text-colour;
+	font-family: $font-family;
+	@include font-feature-settings('liga', 'kern', 'pnum');
+	font-size: $text-size;
+	line-height: $text-line-height;
+	text-rendering: optimizeLegibility;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: $heading-size;
+
+	line-height: $heading-line-height;
+	@include margin(null null $small-spacing null);
+
+	&#site {
+		font-size: 2 * $heading-size;
+		@include margin(0 0 0 0);
+	}
+
+	.project-header & {
+		margin-top: 0;
+	}
+}
+
+article h1 {
+	margin: 0;
+}
+
+p {
+	text-align: left;
+	text-align-last: left;
+	text-justify: auto;
+	@include hyphens(auto);
+
+	@include margin(null null $base-spacing null);
+}
+
+a {
+	color: $active-text-colour;
+	text-decoration: none;
+
+	&:focus,
+	&:hover {
+		text-decoration: underline;
+	}
+
+	li.current-nav & {
+		color: shade($active-text-colour, 80%);
+		font-weight: bold;
+	}
+
+	&.active {
+		font-weight: bold;
+	}
+}
+
+blockquote {
+	font-style: italic;
+}
+
+nav {
+	//font-size: $text-size * 0.90;
+}

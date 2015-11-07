@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Project 2 index
-collection: project-2
+collection: 02-project
 ---
 
 Introduction to lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

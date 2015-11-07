@@ -1,5 +1,9 @@
 // loaded before Neat
-
-// breakpoints
+@import "neat/neat-helpers";
 
 // grid settings
+$grid-columns: 12;
+$max-width: 1280px;
+
+// breakpoints
+$bp: new-breakpoint(min-width 720px 12);

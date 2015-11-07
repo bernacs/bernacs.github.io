@@ -5,7 +5,7 @@
   <head>
     {% include head.html %}
   </head>
-  <body>
+  <body {% if page.front %}class="front"{% endif %}>
     <div class="top-container">
     	{% include header.html %}
     	<div class="main-container">
@@ -15,9 +15,5 @@
     		</main>
     	</div>
     </div>
-  <script type="text/javascript">
-  	$('nav.sticky').fixTo('.main-container');
-  </script>
-  <script type="text/javascript" src="{{site.baseurl}}/{{site.js_dir}}/heading-navigation.js"></script>
   </body>
 </html>

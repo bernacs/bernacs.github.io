@@ -1,14 +1,15 @@
-<nav class="sticky" role="navigation">
+<nav class="sticky ps-container" role="navigation">
 	<ul>
-	{% for page in site.pages reversed %}
-		{% unless page.exclude %}
-		<li class="page"><a href="{{page.url}}">{{page.title}}</a>
+	{% for element in site.pages %}
+		{% unless element.exclude %}
+		<li class={% if element.collection %}"project"{% else %}"page"{% endif %}>
+			<a {% if element.url == page.url %}class="active"{% else %}"{% endif %} href="{{element.url}}">{{element.title}}</a>
 			{% for collection in site.collections %}
-   		{% if page.url == collection[1].link %}
+   		{% if element.url == collection[1].link %}
    		<ul>
 		 		{% for item in collection[1].docs %}
 				<li class="work">
-					<a href="{{ page.url }}#{{ item.title | slugify }}">{{ item.title }}</a>
+					<a href="{{ element.url }}#{{ item.title | slugify }}">{{ item.title }}</a>
 			  </li>
 				{% endfor %}
 		 	</ul>

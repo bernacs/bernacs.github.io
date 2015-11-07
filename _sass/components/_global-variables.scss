@@ -1,0 +1,38 @@
+// colours
+// ————————————————————————————————————————————————————————————————————————————
+
+// swiss style colours
+$swiss-light-gray:  #dfe0e2;
+$swiss-medium-gray: #a5a6a9;
+$swiss-dark-gray:   #2f292b;
+$swiss-red:         #f45844;
+
+// container colours
+$header-background: rgba($swiss-light-gray, 0.4);
+$nav-background: rgba($swiss-light-gray, 0.4);
+$body-background: rgba($swiss-light-gray, 0.2);
+
+// fonts & spacings
+// ————————————————————————————————————————————————————————————————————————————
+
+$font-family: $helvetica;
+
+// text
+$text-size: 1em;
+$text-line-height: 1.5;
+
+// headings
+$heading-size: 1em;
+$heading-line-height: 1.2;
+
+// colours
+$text-colour: $swiss-dark-gray;
+$active-text-colour: $swiss-dark-gray;
+
+// spacings
+$base-spacing: $text-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+
+// timings
+$timing: ease;
+$duration: 150ms;

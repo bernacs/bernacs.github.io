@@ -20,20 +20,20 @@ function scanlineDiff (element) {
 // select current element and append classes to element and navigation
 function changeCurrent() {
 	$('section.work').removeClass('current');
-	//$('.in-view').first().addClass('current');
+	
+	if ($('.in-view')) {
+		if ($(window).height() <= 1440) {
+			// inspired by http://stackoverflow.com/a/11985695
+			var closest = [].reduce.call($('.in-view'), function(closer, current) {
+				return scanlineDiff($(closer)) < scanlineDiff($(current)) ? closer : current;
+			})
 
-	if ($(window).height() <= 1440) {
-		// inspired by http://stackoverflow.com/a/11985695
-		var closest = [].reduce.call($('.in-view'), function(closer, current) {
-			return scanlineDiff($(closer)) < scanlineDiff($(current)) ? closer : current;
-		})
+			$(closest).addClass('current');
 
-		$(closest).addClass('current');
-
-	} else{
-		$('.in-view').first().addClass('current');
+		} else{
+			$('.in-view').first().addClass('current');
+		};
 	};
-
 
 	var current_work = $('section.current').data('work');
 

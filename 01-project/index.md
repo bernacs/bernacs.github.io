@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Project 1 index
-collection: project-1
+collection: 01-project
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

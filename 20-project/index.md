@@ -1,10 +1,11 @@
 ---
 layout: project
-title: Project 2 index
-collection: 02-project
+title: Project 1 index
+collection: 20-project
+permalink: /project-1/
 ---
 
-Introduction to lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse

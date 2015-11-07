@@ -19,18 +19,14 @@ img_dir: assets/img
 
 exclude: ['README.md', 'Gemfile','Gemfile.lock','.gitignore','bernac.sublime-project', 'bernac.sublime-workspace']
 
-collections:
-- 02-project
-- 01-project
-
 # can override collection links and permalinks by changing respective index permalink
 # they must, however, be the same to ensure proper rendering
 collections:
-  01-project:
-    link: /01-project/
+  20-project:
+    link: /project-1/
     output: true
-    permalink: /01-project/:title/
-  02-project:
-    link: /02-project/
+    permalink: /project-1/:title/
+  21-project:
+    link: /project-2/
     output: true
-    permalink: /02-project/:title/
+    permalink: /project-2/:title/

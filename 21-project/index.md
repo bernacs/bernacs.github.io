@@ -1,7 +1,8 @@
 ---
 layout: project
-title: Project 1 index
-collection: 01-project
+title: Project 2 index
+collection: 21-project
+permalink: /project-2/
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

@@ -2,7 +2,7 @@
 layout: project
 title: Project 1 index
 collection: 20-project
-permalink: /project-1/
+permalink: /project-1/ # same as collection.link !
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

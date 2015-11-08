@@ -38,7 +38,8 @@ function draw() {
     width = $(window).width();
     height = $(window).height();
 
-    svg.attr('width', width).attr('height', height);
+    svg.attr('width', width).attr('height', height)
+      .attr("viewBox", "0 0 " + width + " " + height);
     force.size([width, height]).resume();
   }
 

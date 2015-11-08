@@ -19,10 +19,18 @@ body {
 
 		nav {
 			@include span-columns(3 of 12);
+
+			body.front & {
+				z-index: 1;
+			}
 		}
 		main.content {
 			@include span-columns(9 of 12);
 		}
+	}
+
+	body.front & {
+		z-index: -1;
 	}
 }
 

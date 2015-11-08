@@ -10,10 +10,15 @@
     	{% include header.html %}
     	<div class="main-container">
     		{% include nav.html %}
-    		<main class="content">
-    			{{ content }}
-    		</main>
+    		{% unless page.front %}
+        <main class="content">
+          {{ content }}
+        </main>
+        {% endunless %}
     	</div>
     </div>
+    {% if page.front %}
+    <div id="graph"></div>
+    {% endif %}
   </body>
 </html>

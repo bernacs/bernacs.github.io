@@ -2,32 +2,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- css -->
-{% if include.alt_css %}
-<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/{{site.css_dir}}/{{ include.alt_css }}" />
-{% else %}
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/{{site.css_dir}}/main.css" />
-{% endif %}
-<!-- fontAwesome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <!-- js -->
-<!-- jQuery -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<!-- jQuery plugins -->
-<!-- fixTo -->
-<script type="text/javascript" src="https://raw.githubusercontent.com/bbarakaci/fixto/master/dist/fixto.js"></script>
-<!-- jQuery.appear -->
-<script type="text/javascript" src="https://raw.githubusercontent.com/morr/jquery.appear/master/jquery.appear.js"></script>
-<!-- jQuery.perfect-scrollbar -->
+<script type="text/javascript" src="https://raw.githubusercontent.com/bbarakaci/fixto/master/dist/fixto.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/{{ site.js_dir }}/jQuery.appear.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.7/js/min/perfect-scrollbar.jquery.min.js"></script>
+{% if page.d3 %}
+<script type="text/javascript" src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+{% endif %}
 <!-- main -->
 <script type="text/javascript" src="{{site.baseurl}}/{{site.js_dir}}/heading-navigation.js"></script>
 <script type="text/javascript" src="{{site.baseurl}}/{{site.js_dir}}/basic.js"></script>
+{% if page.custom_js %}
+<script type="text/javascript" src="{{site.baseurl}}/{{site.js_dir}}/{{page.custom_js}}"></script>
+{% endif %}
+<!-- analytics -->
 <script type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-69836318-1', 'auto');
+  ga('create', '{{ site.tracking }}', 'auto');
   ga('send', 'pageview');
 </script>

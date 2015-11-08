@@ -3,13 +3,13 @@
 	{% for element in site.pages %}
 		{% unless element.exclude %}
 		<li class={% if element.collection %}"project"{% else %}"page"{% endif %}>
-			<a {% if element.url == page.url %}class="active"{% else %}"{% endif %} href="{{element.url}}">{{element.title}}</a>
+			<a {% if element.url == page.url %}class="active"{% else %}{% endif %} href="{{element.url}}">{{element.title}}</a>
 			{% for collection in site.collections %}
    		{% if element.url == collection[1].link %}
    		<ul>
-		 		{% for item in collection[1].docs %}
+		 		{% for work in collection[1].docs %}
 				<li class="work">
-					<a href="{{ element.url }}#{{ item.title | slugify }}">{{ item.title }}</a>
+					<a href="{{ element.url }}#{{ work.title | slugify }}">{{ work.title }}</a>
 			  </li>
 				{% endfor %}
 		 	</ul>

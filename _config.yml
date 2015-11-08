@@ -1,3 +1,15 @@
+# can override collection links and permalinks by changing respective index permalink
+# they must, however, be the same to ensure proper rendering
+collections:
+  20-project:
+    link: /project-1/
+    output: true
+    permalink: /project-1/:title/
+  21-project:
+    link: /project-2/
+    output: true
+    permalink: /project-2/:title/
+
 baseurl: ""
 url: "http://127.0.0.1:4000"
 encoding: utf-8
@@ -18,19 +30,14 @@ img_dir: assets/img
 
 exclude: ['README.md', 'Gemfile','Gemfile.lock','.gitignore','bernac.sublime-project', 'bernac.sublime-workspace']
 
-# can override collection links and permalinks by changing respective index permalink
-# they must, however, be the same to ensure proper rendering
-collections:
-  20-project:
-    link: /project-1/
-    output: true
-    permalink: /project-1/:title/
-  21-project:
-    link: /project-2/
-    output: true
-    permalink: /project-2/:title/
+tracking: UA-69836318-1
 
 # Prose.io configuration
 prose:
   siteurl: "https://bernacs.github.io"
-  media: "/assets/img/"
+  media: "/assets/img"
+  ignore:
+    - index.html
+    - /_layouts
+    - /_includes
+    - /_gitignore

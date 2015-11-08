@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $('nav').stick_in_parent();
+  $('nav').fixTo('.main-container');
+  // $('nav').stick_in_parent();
   $('nav').perfectScrollbar({
     suppressScrollX: true
   });

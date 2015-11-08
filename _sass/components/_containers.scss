@@ -3,17 +3,18 @@
 
 body {
 	@include margin(0 0 0 0);
+		min-height: 100vh;
 }
 
 .top-container {
 	@include outer-container();
 	min-width: 720px;
-	min-height: 100vh;
 
 	header#main {
 		@include span-columns(12);
 
 		body.front & {
+			position: relative;
 			z-index: 1;
 		}
 	}

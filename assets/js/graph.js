@@ -1,7 +1,7 @@
 d3.select(window).on("load", draw);
 
 function draw() {
-  console.log("entered draw()");
+  // console.log("entered draw()");
 
   var thumbSize = 150,
       thumbOffset = -(thumbSize / 2);
@@ -14,16 +14,15 @@ function draw() {
                 .linkDistance(180)
                 .charge(-400)
                 .gravity(.02)
-                .size([width, height])
                 .on("tick", tick);
 
   var svg = d3.select("#graph")
-              .append("svg")
-              .attr("width", width)
-              .attr("height", height);
+              .append("svg");
 
   var link = svg.selectAll(".link"),
       node = svg.selectAll(".node");
+
+  resize();
 
   d3.json("/assets/json/graph.json", function(err, data) {
     if (err) {
@@ -33,8 +32,20 @@ function draw() {
     update();
   });
 
+  function resize() {
+    // console.log('entered resize()');
+
+    width = $(window).width();
+    height = $(window).height();
+
+    svg.attr('width', width).attr('height', height);
+    force.size([width, height]).resume();
+  }
+
+  d3.select(window).on("resize", resize);
+
   function update() {
-    console.log("entered update()");
+    // console.log("entered update()");
 
     var nodes = flatten(root),
         links = d3.layout.tree().links(nodes);

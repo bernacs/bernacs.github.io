@@ -14,11 +14,7 @@ body {
 		@include span-columns(12);
 
 		body.front & {
-<<<<<<< HEAD
 			z-index: 1;
-=======
-			z-index: 0;
->>>>>>> 23e8469460368f139c0f5b172b122670136f4cd5
 		}
 	}
 

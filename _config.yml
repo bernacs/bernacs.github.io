@@ -11,7 +11,7 @@ collections:
     permalink: /project-2/:title/
 
 baseurl: ""
-url: "http://127.0.0.1:4000"
+url: "https://bernacs.github.io"
 encoding: utf-8
 permalink: pretty
 markdown: kramdown

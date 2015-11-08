@@ -2,7 +2,7 @@
 // ————————————————————————————————————————————————————————————————————————————
 
 #graph {
-	z-index: 0;
+	z-index: 1;
 	@include position(fixed, 0px null null 0px);
 	height: 100vh;
 	width: 100vw;

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('nav.sticky').fixTo('.main-container');
+  $('nav').fixTo('.main-container');
   $('nav').perfectScrollbar({
     suppressScrollX: true
   });

@@ -89,7 +89,7 @@ header#main {
 	position: sticky;
 	top: 0px;
 
-	&:after, &:after {
+	&:before, &:after {
 		@include clearfix;
 	}
 }

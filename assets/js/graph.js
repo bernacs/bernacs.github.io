@@ -100,7 +100,13 @@ function draw() {
       .append("text")
       .attr('class','caption')
       .attr('text-anchor', 'middle')
-      .attr('dy', -(thumbOffset) + 20)
+      .attr('dy', function(e) {
+        if (e.offset) {
+          return -(thumbOffset) + 20 - e.offset;
+        } else {
+          return -(thumbOffset) + 20;
+        };
+      })
       .text(function(e) {
         return e.name;
       });

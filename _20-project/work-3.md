@@ -1,8 +1,7 @@
 ---
 layout: work
-title: Nutritional benefits of topinambur consumption
-img: namjot.png
-offset: 50
+title: Title goes here
+img: ziamniaczek.png
 ---
 
 ## Some more work

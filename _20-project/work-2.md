@@ -1,6 +1,7 @@
 ---
 layout: work
 title: Critical point of looseness
+img: druty.png
 ---
 
 ## Some more work

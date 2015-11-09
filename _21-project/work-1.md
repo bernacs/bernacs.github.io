@@ -2,6 +2,7 @@
 layout: work
 #title: Work 1 - Project 2
 title: Local theories of aerodynamics
+img: gołąb.png
 ---
 
 ## Here's some work

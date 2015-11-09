@@ -1,7 +1,9 @@
 ---
 layout: work
-title: Stabilisation of fluid points
+title: Stabilisation of fluid sites
 published: true
+img: dżaba.png
+offset: 30
 ---
 
 ## Here's some work

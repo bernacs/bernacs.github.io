@@ -5,19 +5,22 @@ exclude: yes
   "__comment": "site root",
   "name": "Sonia Bernac",
   "link": "{{ site.baseurl }}/",
-  "img": "",
+  "img": "{{ site.baseurl }}/{{ site.graph_dir }}/root.png",
+  "offset": "60",
   "children": [{% for project in projects %}{% assign current = forloop.index %}
     {
       "__comment": "project {{current }} of {{ forloop.length }}",
       "name": "{{ project.title }}",
       "link": "{{ project.url }}",
-      "img": "{{ project.img }}",
+      "img": "{{ site.baseurl }}/{{ site.graph_dir }}/project.png",
+      "offset": "65",
       "children": [{% for collection in site.collections %}{% if project.url == collection[1].link %}{% for work in collection[1].docs %}
         {
           "__comment": "work {{ forloop.index }} of {{ forloop.length }} under project {{ current }}",
           "name": "{{ work.title }}",
           "link": "{{ project.url }}#{{ work.title | slugify }}",
-          "img": "{{ work.img }}"
+          "img": "{% if work.img %}{{ site.baseurl }}/{{ site.graph_dir }}/{{ work.img }}{% endif %}",
+          "offset": "{{ work.offset }}"
         }{% unless forloop.last %},{% endunless %}{% endfor %}{% endif %}{% endfor %}
       ]
     }{% unless forloop.last %},{% endunless %}{% endfor %}

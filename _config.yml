@@ -27,6 +27,7 @@ css_dir: assets/css
 js_dir: assets/js
 png_dir: assets/png
 img_dir: assets/img
+graph_dir: assets/png/graph
 
 exclude: ['README.md', 'Gemfile','Gemfile.lock','.gitignore','bernac.sublime-project', 'bernac.sublime-workspace']
 

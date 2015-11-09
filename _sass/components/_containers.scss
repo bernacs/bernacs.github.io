@@ -63,6 +63,39 @@ header#main {
 		height: 100vh;
 
 		overflow-y: hidden !important;
+
+		// fallback for browsers without position: sticky support
+		// Sticky polyfill does not detect padding correctly if
+		// defined only in percentages (with flex-gutter)
+		&.fallback {
+			@include pad(22.5px);
+			padding-right: 11.25px;
+
+			@include media(max-width 800px) {
+				@include pad(12.65px);
+				padding-right: 6.31667px;
+			};
+
+			@include media(min-width 800px max-width 900px) {
+				@include pad(15.8167px);
+				padding-right: 7.9px;
+			};
+
+			@include media(min-width 900px max-width 1000px) {
+				@include pad(17.5667px);
+				padding-right: 8.78333px;
+			};
+
+			@include media(min-width 1000px max-width 1100px) {
+				@include pad(19.3333px);
+				padding-right: 9.66667px;
+			};
+
+			@include media(min-width 1100px max-width 1200px) {
+				@include pad(21.0833px);
+				padding-right: 10.5333px;
+			};
+		}
 	}
 
 	main.content {

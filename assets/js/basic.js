@@ -1,4 +1,10 @@
 $(document).ready(function() {
+  // fallback
+  var nav_position = $('nav').css('position');
+  if (nav_position != 'sticky') {
+    $('nav').addClass('fallback');
+  };
+
   $('nav').Stickyfill();
 
   $('nav').perfectScrollbar({

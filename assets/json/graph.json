@@ -7,6 +7,8 @@ exclude: yes
   "link": "{{ site.baseurl }}/",
   "img": "{{ site.baseurl }}/{{ site.graph_dir }}/root.png",
   "offset": "60",
+  "linkLength": "200",
+  "linkStrength": "0.5",
   "children": [{% for project in projects %}{% assign current = forloop.index %}
     {
       "__comment": "project {{current }} of {{ forloop.length }}",
@@ -14,6 +16,8 @@ exclude: yes
       "link": "{{ project.url }}",
       "img": "{{ site.baseurl }}/{{ site.graph_dir }}/project.png",
       "offset": "65",
+      "linkLength": "120",
+      "linkStrength": "",
       "children": [{% for collection in site.collections %}{% if project.url == collection[1].link %}{% for work in collection[1].docs %}
         {
           "__comment": "work {{ forloop.index }} of {{ forloop.length }} under project {{ current }}",

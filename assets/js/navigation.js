@@ -38,8 +38,10 @@ function changeCurrent() {
 	var current_work = $('section.current').data('work');
 
 	$('nav li.work').removeClass('current-nav').each(function(index, element) {
-		var hlink = $(element).find('a').attr('href').split('#')[1];
-		if (hlink == current_work) {
+		var target = $(element).find('a').attr('href').split(/[#/]/).clean("");
+		var path = $(location).attr('pathname').split('/').clean("");
+
+		if (path.first() == target.first() && target.last() == current_work) {
 			$(element).addClass('current-nav');
 		};
 	});
@@ -51,7 +53,6 @@ $(document).ready(function() {
 
 	$('.content').on('appear', 'section.work', function(event, $appeared_el) {
 		event.preventDefault();
-		/* Act on the event */
 
 		$appeared_el.each(function(){
 			$(this).addClass('in-view');
@@ -62,7 +63,6 @@ $(document).ready(function() {
 
 	$('.content').on('disappear', 'section.work', function(event, $disappeared_el) {
 		event.preventDefault();
-		/* Act on the event */
 
 		$disappeared_el.each(function(){
 			$(this).removeClass('in-view');
@@ -71,3 +71,23 @@ $(document).ready(function() {
 		changeCurrent();
 	});
 });
+
+// from http://stackoverflow.com/a/281335
+Array.prototype.clean = function(deleteValue) {
+  for (var i = 0; i < this.length; i++) {
+    if (this[i] == deleteValue) {         
+      this.splice(i, 1);
+      i--;
+    }
+  }
+  return this;
+};
+
+// for readability
+Array.prototype.first = function () {
+  return this[0];
+};
+
+Array.prototype.last = function () {
+  return this[this.length - 1];
+};

@@ -3,7 +3,7 @@ d3.select(window).on("load", draw);
 function draw() {
   // console.log("entered draw()");
 
-  var thumbSize = 150,
+  var thumbSize = 160,
       thumbOffset = -(thumbSize / 2);
 
   var width = $(window).width(),
@@ -11,9 +11,10 @@ function draw() {
       root;
 
   var force = d3.layout.force()
-                .linkDistance(180)
-                .charge(-400)
-                .gravity(.02)
+                //.linkDistance(140)
+                // .linkStrength(0.1)
+                .charge(-500)
+                .gravity(0.06)
                 .on("tick", tick);
 
   var svg = d3.select("#graph")
@@ -46,13 +47,26 @@ function draw() {
   d3.select(window).on("resize", resize);
 
   function update() {
-    // console.log("entered update()");
 
     var nodes = flatten(root),
         links = d3.layout.tree().links(nodes);
 
     force.nodes(nodes)
          .links(links)
+         .linkDistance(function(e) {
+          if (e.source.linkLength) {
+            return e.source.linkLength;
+          } else {
+            return 140;
+          };
+         })
+         .linkStrength(function(e) {
+          if (e.source.linkStrength) {
+            return e.source.linkStrength;
+          } else {
+            return 1;
+          };
+         })
          .start();
 
     link = link.data(links, function(e) {

@@ -87,6 +87,8 @@ span.copyright {
 li {
 	&.work {
 		padding-left: $small-spacing;
+		// padding-left: 2* $small-spacing;
+		// text-indent: -$small-spacing;
 	}
 	&.project {
 
@@ -109,8 +111,6 @@ body {
 
 	&.front {
 		/* background from subtlepattern.com */
-		// @include background(url(/assets/png/noisy_grid_120.png));
 		@include background-image($body-background, url(/assets/png/noisy_grid_120.png));
-		// background: transparent url(/assets/png/noisy_grid_150.png) repeat scroll 100% 100%;
 	}
 }

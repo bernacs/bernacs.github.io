@@ -1,26 +1,22 @@
 # can override collection links and permalinks by changing respective index permalink
 # they must, however, be the same to ensure proper rendering
 collections:
-  20-project:
-    link: /project-1/
+  20-fluid-sites:
+    link: /stabilisation-of-fluid-sites/
     output: true
-    permalink: /project-1/:title/
-  21-project:
-    link: /project-2/
+    permalink: /stabilisation-of-fluid-sites/:title/
+  21-local-theories:
+    link: /local-theories-of-aerodynamics/
     output: true
-    permalink: /project-2/:title/
-  22-project:
-    link: /project-3/
+    permalink: /local-theories-of-aerodynamics/:title/
+  22-encyclopedia:
+    link: /encyclopedia/
     output: true
-    permalink: /project-3/:title/
-  23-project:
-    link: /project-4/
+    permalink: /encyclopedia/:title/
+  23-beautiful-thing:
+    link: /a-beautiful-thing/
     output: true
-    permalink: /project-4/:title/
-  24-project:
-    link: /project-5/
-    output: true
-    permalink: /project-5/:title/
+    permalink: /a-beautiful-thing/:title/
 
 baseurl: ""
 url: "https://bernacs.github.io"

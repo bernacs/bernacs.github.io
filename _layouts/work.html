@@ -5,9 +5,10 @@ layout: default
 <article>
 	{% assign slug = page.title | slugify %}
 	<section class="work" data-work="{{ slug }}">
-		<h1 id="{{ slug }}">
-			{{ page.title }}  <span class "permalink"><a href="{{ page.url }}"><i class="fa fa-link fa-flip-vertical"></i></a></span>
+		<h1 id="{{ slug }}"><a href="{{ page.url }}">
+			{{ page.title }}  <span class "permalink"><i class="fa fa-link fa-flip-vertical"></i></span></a>
 		</h1>
 		{{ content }}
 	</section>
+	{% include footer.html %}
 </article>

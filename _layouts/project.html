@@ -8,6 +8,18 @@ layout: default
 	{% endif %}
 {% endfor %}
 
+{% if page.single %}
+<article>
+	{% assign slug = page.title | slugify %}
+	<section class="work" data-work="{{ slug }}">
+		<h1 id="{{ slug }}"><a href="{{ page.url }}">
+			{{ page.title }}  <span class "permalink"><i class="fa fa-link fa-flip-vertical"></i></span></a>
+		</h1>
+		{{ content }}
+	</section>
+	{% include footer.html %}
+</article>
+{% else %}
 <article>
 	<header class="project-header">
 		<h1>{{ page.title }}</h1>
@@ -17,8 +29,8 @@ layout: default
 	{% for work in current.docs %}
 	{% assign slug = work.title | slugify %}
 	<section class="work" data-work="{{ slug }}">
-		<h1 id="{{ slug }}">
-			{{ work.title }}  <span class "permalink"><a href="{{ work.url }}"><i class="fa fa-link fa-flip-vertical"></i></a></span>
+		<h1 id="{{ slug }}"><a href="{{ work.url }}">
+			{{ work.title }}  <span class "permalink"><i class="fa fa-link fa-flip-vertical"></i></span></a>
 		</h1>
 		{{ work.content | markdownify }}
 		{% unless forloop.last %}
@@ -28,3 +40,4 @@ layout: default
 	{% endfor %}
 	{% include footer.html %}
 </article>
+{% endif %}

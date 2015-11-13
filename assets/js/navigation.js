@@ -49,7 +49,7 @@ function changeCurrent() {
 
 $(document).ready(function() {
 	
-	$('.content section.work').appear();
+	$('.content section.work').appear({'force_process': true});
 
 	$('.content').on('appear', 'section.work', function(event, $appeared_el) {
 		event.preventDefault();

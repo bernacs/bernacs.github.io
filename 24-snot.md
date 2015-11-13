@@ -1,8 +1,10 @@
 ---
 layout: project
-title: Project 5 index
-collection: 24-project
-permalink: /project-5/ # same as collection.link !
+title: Snot
+collection:
+permalink: /snot/ # same as collection.link !
+single: yes
+img:
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

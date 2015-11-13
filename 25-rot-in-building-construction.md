@@ -1,8 +1,10 @@
 ---
 layout: project
-title: Project 3 index
-collection: 22-project
-permalink: /project-3/ # same as collection.link !
+title: Rot in building construction
+collection:
+permalink: /rot-in-building-construction/ # same as collection.link !
+single: yes
+img:
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

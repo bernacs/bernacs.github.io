@@ -11,12 +11,12 @@ exclude: yes
   "linkStrength": "0.5",
   "children": [{% for project in projects %}{% assign current = forloop.index %}
     {
-      "__comment": "project {{current }} of {{ forloop.length }}",
+      "__comment": "project {{ current }} of {{ forloop.length }}",
       "name": "{{ project.title }}",
       "link": "{{ project.url }}",
-      "img": "{{ site.baseurl }}/{{ site.graph_dir }}/project.png",
-      "offset": "65",
-      "linkLength": "120",
+      "img": "{% if project.img %}{{ site.baseurl }}/{{ site.graph_dir }}/{{ project.img }}{% else %}{{ site.baseurl }}/{{ site.graph_dir }}/project.png{% endif %}",
+      "offset": "{% if project.offset %}{{ project.offset }}{% else %}65{% endif %}",
+      "linkLength": "",
       "linkStrength": "",
       "children": [{% for collection in site.collections %}{% if project.url == collection[1].link %}{% for work in collection[1].docs %}
         {

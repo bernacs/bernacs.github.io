@@ -1,8 +1,10 @@
 ---
 layout: project
-title: Project 2 index
-collection: 21-project
-permalink: /project-2/ # same as collection.link !
+title: Local theories of aerodynamics
+collection: 21-local-theories
+permalink: /local-theories-of-aerodynamics/ # same as collection.link !
+single:
+img:
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

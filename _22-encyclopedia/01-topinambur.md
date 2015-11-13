@@ -1,9 +1,11 @@
 ---
-layout: project
-title: Project 4 index
-collection: 23-project
-permalink: /project-4/ # same as collection.link !
+layout: work
+title: Nutritional benefits of topinambur consumption
+img: 
+offset:
 ---
+
+## Content
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

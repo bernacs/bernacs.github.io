@@ -1,8 +1,8 @@
 ---
 layout: work
 title: 1m² of bird wire
-img: 
-offset:
+img: birdwire.png
+offset: 10
 ---
 
 ## Content

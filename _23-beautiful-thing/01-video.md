@@ -1,8 +1,8 @@
 ---
 layout: work
 title: Video
-img: 
-offset:
+img: beautiful-thing.png
+offset: 10
 ---
 
 ## Content

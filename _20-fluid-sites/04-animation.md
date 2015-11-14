@@ -1,8 +1,8 @@
 ---
 layout: work
-title: Critical point of looseness
-img: critical-point.png
-offset:
+title: Animation
+img: fluid-animation.png
+offset: 25
 ---
 
 ## Content

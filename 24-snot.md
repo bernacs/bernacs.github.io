@@ -4,7 +4,9 @@ title: Snot
 collection:
 permalink: /snot/ # same as collection.link !
 single: yes
-img:
+img: snot.png
+offset: 20
+weight:
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

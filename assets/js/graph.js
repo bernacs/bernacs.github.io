@@ -1,7 +1,6 @@
 d3.select(window).on("load", draw);
 
 function draw() {
-  // console.log("entered draw()");
 
   var thumbSize = 160,
       thumbOffset = -(thumbSize / 2);
@@ -14,7 +13,7 @@ function draw() {
                 //.linkDistance(140)
                 // .linkStrength(0.1)
                 .charge(-500)
-                .gravity(0.06)
+                .gravity(0.02)
                 .on("tick", tick);
 
   var svg = d3.select("#graph")
@@ -34,7 +33,6 @@ function draw() {
   });
 
   function resize() {
-    // console.log('entered resize()');
 
     width = $(window).width();
     height = $(window).height();
@@ -77,7 +75,10 @@ function draw() {
 
     link.enter()
         .insert("line", ".node")
-        .attr("class", "link");
+        .attr("class", "link")
+        .style("stroke-width", function(e) {
+          return e.target.linkWeight * 1.2 + "px";
+        });
 
     node = node.data(nodes, function(e) {
       return e.id;

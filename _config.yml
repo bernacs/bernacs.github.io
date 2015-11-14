@@ -37,6 +37,8 @@ png_dir: assets/png
 img_dir: assets/img
 graph_dir: assets/png/graph
 
+js: ['navigation.min.js', 'basic.js', 'jQuery.appear.min.js', 'stickyfill.min.js']
+
 exclude: ['README.md', 'Gemfile','Gemfile.lock','.gitignore','bernac.sublime-project', 'bernac.sublime-workspace']
 
 tracking: UA-69836318-1

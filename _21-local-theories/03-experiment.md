@@ -1,8 +1,8 @@
 ---
 layout: work
 title: Experiment 3
-img: 
-offset:
+img: experiment3.png
+offset: 30
 ---
 
 ## Content

@@ -1,8 +1,8 @@
 ---
 layout: work
 title: Performance
-img: 
-offset:
+img: fluid-performance.png
+offset: 50
 ---
 
 ## Content

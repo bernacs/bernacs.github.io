@@ -1,8 +1,8 @@
 ---
 layout: work
-title: Nutritional benefits of topinambur consumption
-img: 
-offset:
+title: Print
+img: fluid-print.png
+offset: 35
 ---
 
 ## Content

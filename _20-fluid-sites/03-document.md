@@ -1,8 +1,8 @@
 ---
 layout: work
-title: Print
-img: 
-offset:
+title: Document
+img: fluid-document.png
+offset: 25
 ---
 
 ## Content

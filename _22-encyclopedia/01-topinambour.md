@@ -1,8 +1,8 @@
 ---
 layout: work
-title: Critical point of looseness
-img: critical-point.png
-offset:
+title: Nutritional benefits of topinambour consumption
+img: topinambour.png
+offset: 10
 ---
 
 ## Content

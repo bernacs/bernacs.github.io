@@ -1,8 +1,8 @@
 ---
 layout: work
 title: Hideouts
-img: 
-offset:
+img: hideouts.png
+offset: 30
 ---
 
 ## Content

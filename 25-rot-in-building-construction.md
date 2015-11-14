@@ -4,7 +4,9 @@ title: Rot in building construction
 collection:
 permalink: /rot-in-building-construction/ # same as collection.link !
 single: yes
-img:
+img: rot.png
+offset: 0
+weight:
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

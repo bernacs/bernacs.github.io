@@ -3,6 +3,8 @@ layout: project
 title: Stabilisation of fluid sites
 collection: 20-fluid-sites
 permalink: /stabilisation-of-fluid-sites/ # same as collection.link !
+single:
+img:
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

@@ -1,8 +1,8 @@
 ---
 layout: work
 title: Video
-img: 
-offset:
+img: fluid-video.png
+offset: 25
 ---
 
 ## Content

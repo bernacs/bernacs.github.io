@@ -13,7 +13,7 @@ video • 5:38 • summer 2014
 Video still
 {: .caption}
 
-{% include video %}
+{% include video url='https://www.youtube.com/watch?v=-2wD_fqOBMk' %}
 
-Video (2:xx excerpt)
+Video (2:01 excerpt)
 {: .caption}

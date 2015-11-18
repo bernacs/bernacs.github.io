@@ -15,7 +15,7 @@ The video is based on the 6 hours interview with a pigeon fancier from Poland. H
 Video still
 {: .caption}
 
-{% include video %}
+{% include video url='https://youtu.be/a_vwSUiDLno' %}
 
 03:21 excerpt
 {: .caption}

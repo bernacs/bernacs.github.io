@@ -1,0 +1,15 @@
+{% assign file = include.file %}
+{% capture filename %}{{ include.file }}{% endcapture %}
+{% capture classes %}{: .image{% if include.class %}{{ include.class | prepend: ' .' }}{% endif %}}{% endcapture %}
+{% if include.alt %}
+	{% assign alt = include.alt %}
+{% else %}
+	{% assign alt = filename | split: '.' | first %}
+{% endif %}
+{% if include.file %}
+<img{% if site.lazyload %} class="lazyload"{% endif %} src="{{ site.baseurl }}/{{ site.img_dir }}/{{ include.file }}" alt="{{ alt }}">
+{{ classes }}
+{% else %}
+<img{% if site.lazyload %} class="lazyload"{% endif %} src= "https://www.placehold.it/1280x900" alt="placeholder image">
+{{ classes }}
+{% endif %}

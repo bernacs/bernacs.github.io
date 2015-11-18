@@ -1,0 +1,44 @@
+{% if include.en contains ".md" %}
+  {% assign en_file = "scripts/" | append: include.en %}
+  {% capture en_inc %}{% include {{ en_file }} %}{% endcapture %}
+  {% capture en %}{{ en_inc | markdownify }}{% endcapture %}
+{% else %}
+  {% capture en_content %}{{ include.en }}{% endcapture %}
+  {% capture en %}{{ en_content | markdownify }}{% endcapture %}
+{% endif %}
+
+{% if include.pl contains ".md" %}
+  {% assign pl_file = "scripts/" | append: include.pl %}
+  {% capture pl_inc %}{% include {{ pl_file }} %}{% endcapture %}
+  {% capture pl %}{{ pl_inc | markdownify }}{% endcapture %}
+{% else %}
+  {% capture pl_content %}{{ include.pl }}{% endcapture %}
+  {% capture pl %}{{ pl_content | markdownify }}{% endcapture %}
+{% endif %}
+
+{% if include.pl %}
+<ul class="accordion-tabs">
+  <li class="tab-header-and-content">
+    <a href="javascript:void(0)" class="is-active tab-link">English</a>
+    <div class="tab-content script">
+      {{ en }}
+    </div>
+  </li>
+  <li class="tab-header-and-content">
+    <a href="javascript:void(0)" class="tab-link">Polish</a>
+    <div class="tab-content script">
+      {{ pl }}
+    </div>
+  </li>
+</ul>
+
+Video script
+{: .caption}
+{% else %}
+<div class="script">
+  {{ en }}
+</div>
+
+Video script
+{: .caption}
+{% endif %}

@@ -1,0 +1,4 @@
+<audio controls>
+  <source src="{{site.baseurl}}/{{site.media_dir}}/{{include.file}}" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>

@@ -36,7 +36,26 @@ p {
 	@include margin(null null $base-spacing null);
 }
 
+p.caption {	
+	width: 80%;
+	text-align: center;
+	font-size: $caption-size;
+
+	@include margin(($small-spacing / 2) auto null auto);
+	@include display(block);
+}
+
+p.meta {
+	// @include p.caption;
+	border: 1px solid #000;
+	@include pad($small-spacing / 2);
+	text-align: center;
+	text-justify: distribute;
+	@include fill-parent;
+}
+
 a {
+	// color: $active-text-colour;
 	color: $active-text-colour;
 	text-decoration: none;
 
@@ -46,8 +65,16 @@ a {
 	}
 
 	li.current-nav & {
-		color: shade($active-text-colour, 80%);
+		color: $active-text-colour;
 		font-weight: bold;
+	}
+
+	table & {
+		color: #558a86;
+	}
+
+	&.is-active {
+		color: #558a86;
 	}
 
 	&.active {

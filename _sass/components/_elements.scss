@@ -38,6 +38,55 @@ dl {
   }
 }
 
+// tables (from bourbon bitters)
+// ————————————————————————————————————————————————————————————————————————————
+
+// Border
+$base-border-color: $swiss-light-gray;
+$base-border: 1px solid $base-border-color;
+$base-border-radius: 3px;
+
+table {
+  border-collapse: collapse;
+  margin: $small-spacing 0;
+  table-layout: fixed;
+  width: 100%;
+
+  td {
+  	&:nth-child(1) {
+  		width: 15%;
+  	}
+  	&:nth-child(2) {
+  		// width: 75%;
+  	}
+  }
+}
+
+th {
+  border-bottom: 1px solid shade($base-border-color, 25%);
+  font-weight: 600;
+  padding: $small-spacing 0;
+  text-align: left;
+}
+
+td {
+  padding: $small-spacing 0;
+}
+
+tr {
+	border-bottom: $base-border;
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+tr,
+td,
+th {
+  vertical-align: top;
+}
+
 // other
 // ————————————————————————————————————————————————————————————————————————————
 
@@ -59,12 +108,55 @@ hr {
 img, picture {
 	@include margin(0 auto 0 auto);
 	max-width: 100%;
+	max-height: 640px;
 	display: block;
 }
 
-// single elements
-// ————————————————————————————————————————————————————————————————————————————
+p.image {
+	@include margin($base-spacing null 0 null);
 
+
+	&.full {
+
+		img, picture {
+			max-width: 80%;
+			max-height: none;
+		}
+	}
+}
+
+// media
+audio {
+	width: 80%;
+	margin: auto;
+	@include display(block);
+}
+
+video {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+// responsive embeds
+.video {
+	@include margin($base-spacing null 0 null);
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: $base-spacing;
+	height: 0;
+	overflow: hidden;
+
+	iframe, object, embed {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+	}
+}
+
+// single elements
 section {
 	h1 {
 		span {
@@ -87,12 +179,66 @@ span.copyright {
 li {
 	&.work {
 		padding-left: $small-spacing;
-		// padding-left: 2* $small-spacing;
-		// text-indent: -$small-spacing;
 	}
 	&.project {
 
 	}
+}
+
+// disables text selection
+@mixin noselect() {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+// large box of text on white background
+div.script {
+	@include margin($base-spacing $base-spacing 0 $base-spacing);
+	@include pad($base-spacing);
+	font-style: normal;
+	font-family: $georgia;
+	background-color: #FFF;
+	@include border-style(solid);
+	@include border-width(1px);
+	@include border-color($swiss-medium-gray);
+	box-sizing: content-box;
+	@include font-feature-settings( 'liga', 'kern');
+	@include noselect;
+
+	p {
+		@include margin($small-spacing null $small-spacing null);
+	}
+}
+
+p.stars {
+	text-align: center;
+}
+
+// bourbon refills accordion tabs
+
+.accordion-tabs {
+  @include clearfix;
+  padding: 0;
+
+  .tab-header-and-content {
+    list-style: none;
+    display: inline;
+  }
+
+  .tab-link {
+    padding-right: 1em;
+    display: inline-block;
+  }
+
+  .tab-content {
+  	margin-top: $small-spacing;
+    display: none;
+    float: left;
+  }
 }
 
 // backgrounds

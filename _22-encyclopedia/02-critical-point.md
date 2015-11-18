@@ -8,6 +8,13 @@ offset: 45
 video • 2:57 • spring 2015
 {: .meta}
 
+{% include image file='critical-point-1.jpg' %}
+
+{% include image file='critical-point-2.jpg' %}
+
+Video stills
+{: .caption}
+
 {% capture script_en %}
 __I.__  
 It doesn't always turn out well.  

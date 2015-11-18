@@ -19,8 +19,6 @@ $(document).ready(function() {
     $('nav').perfectScrollbar('update');
   });
 
-  // $('img').parent().addClass('image');
-
   /* bourbon refills */
   $('.accordion-tabs').each(function() {
     $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();

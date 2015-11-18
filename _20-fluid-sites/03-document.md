@@ -5,11 +5,9 @@ img: fluid-document.png
 offset: 25
 ---
 
-## Content
+official document • winter 2014
+{: .meta}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I wrote a letter to the city council requesting permission to gain ownership over the concrete slab. I did not give the precise dimensions of the object and they granted my request. After a month the council’s decision was changed. The document presented is the first letter from the city council confirming my temporary ownership.
+
+{% include image file='1280x900' alt='Document' %}

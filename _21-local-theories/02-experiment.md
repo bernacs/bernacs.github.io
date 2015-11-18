@@ -5,11 +5,19 @@ img: experiment2.png
 offset: 25
 ---
 
-## Content
+performance • GPS tracker, paper-mâché copy of a stone, balloon filled with helium • duration: 3 hours • released in Oxford & Guildford • spring 2015
+{: .meta}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+{% include image file='local-stone-1.jpg' alt='' %}
+
+{% include image file='local-stone-2.jpg' alt='' %}
+
+{% include image file='local-plot.jpg' alt='' %}
+
+digitally generated chart of coordinates captured by the GPS tracker
+{: .caption}
+
+print • tracing paper, stones • Oxford • spring 2015
+{: .meta}
+
+{% include image file='local-plot-print.jpg' alt='' %}

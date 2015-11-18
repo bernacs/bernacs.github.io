@@ -7,9 +7,8 @@ single:
 img:
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Cyclone _Xaver_ also known as the North Sea flood or tidal surge of 2013, was a winter storm that affected northern Europe. Force 12 winds and heavy snowfall lead to storm surge causing coastal flooding along the coasts of the North and Irish Seas. The impact of the storm on the Baltic Sea was significantly weaker. However, many coasts and ports were completely destroyed. In Sztutowo (Poland) a big concrete slab was washed up on a beach. A thick layer of a polystyryne foam enabled it to float.
+
+{% include image file='platform-1.jpg' alt='Platform 1' %}
+
+{% include image file='platform-2.jpg' alt='Platform 2' %}

@@ -5,11 +5,11 @@ img: experiment1.png
 offset: 40
 ---
 
-## Content
+performance • concrete brick, polystyrene foam, balloon filled with helium • duration: 1 hour • spring 2015
+{: .meta}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Imitating the structure of the concrete slab from _Stabilisation of fluid sites_ I created an object, which posseses proportionally similar buoyant force and weight. Afterwards, I conducted a series of experiments to investigate the volume of polystyrene foam needed to make the model float.
+
+{% include image file='local-brick-1.jpg' alt='' %}
+
+{% include image file='local-brick-2.jpg' alt='' %}

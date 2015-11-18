@@ -5,11 +5,11 @@ img: fluid-performance.png
 offset: 50
 ---
 
-## Content
+performance • duration: 3 weeks • Sztutowo, Poland • summer 2014
+{: .meta}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I lived on the concrete slab for three weeks.
+
+{% include image file='platform-tent-1.jpg' alt='Performance 1' %}
+
+{% include image file='platform-tent-2.jpg' alt='Performance 2' %}

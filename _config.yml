@@ -38,9 +38,9 @@ img_dir: assets/img
 graph_dir: assets/png/graph
 media_dir: assets/media
 
-lazyload: false
+lazyload: true
 
-js: ['navigation.min.js', 'basic.js', 'jQuery.appear.min.js', 'stickyfill.min.js']
+js: ['navigation.min.js', 'basic.js', 'jQuery.appear.min.js', 'stickyfill.min.js', 'lazysizes.min.js']
 
 exclude: ['README.md','Gemfile','Gemfile.lock','.gitignore','bernac.sublime-project','bernac.sublime-workspace']
 

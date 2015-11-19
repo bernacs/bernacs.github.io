@@ -13,6 +13,10 @@ body {
 	header#main {
 		@include span-columns(12);
 
+		h1 {
+			@include span-columns(3);
+		}
+
 		body.front & {
 			position: relative;
 			z-index: 3;
@@ -71,7 +75,13 @@ header#main {
 			@include pad(22.5px);
 			padding-right: 11.25px;
 
-			@include media(max-width 800px) {
+			@include media(max-width 720px) {
+				@include pad(12.65px);
+				padding-right: 6.31667px;
+				width: 167.281px !important;
+			};
+
+			@include media(min-width 720px max-width 800px) {
 				@include pad(12.65px);
 				padding-right: 6.31667px;
 			};

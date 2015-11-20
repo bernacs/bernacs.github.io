@@ -10,6 +10,6 @@ performance • concrete brick, polystyrene foam, balloon filled with helium •
 
 Imitating the structure of the concrete slab from _Stabilisation of fluid sites_ I created an object, which posseses proportionally similar buoyant force and weight. Afterwards, I conducted a series of experiments to investigate the volume of polystyrene foam needed to make the model float.
 
-{% include image file='local-brick-1.jpg' alt='' %}
+{% include image file='local-brick-1.jpg' %}
 
-{% include image file='local-brick-2.jpg' alt='' %}
+{% include image file='local-brick-2.jpg' %}

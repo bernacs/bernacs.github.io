@@ -31,6 +31,9 @@ kramdown:
 sass:
   sass_dir: _sass
 
+gems:
+  - jekyll-sitemap
+
 css_dir: assets/css
 js_dir: assets/js
 png_dir: assets/png

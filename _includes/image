@@ -6,10 +6,23 @@
 {% else %}
 	{% assign alt = filename | split: '.' | first %}
 {% endif %}
+<p>
 {% if include.file %}
-<img{% if site.lazyload %} class="lazyload"{% endif %} {% if site.lazyload %}data-{% endif %}src="{{ site.baseurl }}/{{ site.img_dir }}/{{ include.file }}" alt="{{ alt }}">
-{{ classes }}
+{% if site.lazyload.enabled %}
+{% case site.lazyload.option %}
+{% when 'lqip' %}
+<img class="lazyload" data-src="{{ site.baseurl }}/{{ site.img_dir }}/large/{{ include.file }}" src="{{ site.baseurl }}/{{ site.img_dir }}/small/{{ include.file }}" alt="{{ alt }}">
+{% when 'srcset' %}
+<img class="lazyload" data-srcset="{{ site.baseurl }}/{{ site.img_dir }}/medium/{{ include.file }} 600w, {{ site.baseurl }}/{{ site.img_dir }}/large/{{ include.file }} 750w, {{ site.baseurl }}/{{ site.img_dir }}/very-large/{{ include.file }} 900w" data-src="{{ site.baseurl }}/{{ site.img_dir }}/medium/{{ include.file }}" alt="{{ alt }}">
 {% else %}
-<img{% if site.lazyload %} class="lazyload"{% endif %} {% if site.lazyload %}data-{% endif %}src="https://www.placehold.it/1280x900" alt="placeholder image">
-{{ classes }}
+<img class="lazyload" data-src="{{ site.baseurl }}/{{ site.img_dir }}/large/{{ include.file }}" alt="{{ alt }}">
+{% endcase %}
+<noscript><img src="{{ site.baseurl }}/{{ site.img_dir }}/large/{{ include.file }}" alt="{{ alt }}"></noscript>
+{% else %}{% comment %}no lazyloading{% endcomment %}
+<img class="lazyload" src="{{ site.baseurl }}/{{ site.img_dir }}/large/{{ include.file }}" alt="{{ alt }}">
 {% endif %}
+{% else %}{% comment %}if not include.file{% endcomment %}
+	<img{% if site.lazyload.enabled %} class="lazyload"{% endif %} {% if site.lazyload %}data-{% endif %}src="https://www.placehold.it/1280x900" alt="placeholder image">
+{% endif %}
+</p>
+{{ classes }}

@@ -107,20 +107,33 @@ hr {
 // images
 img, picture {
 	@include margin(0 auto 0 auto);
-	max-width: 100%;
-	max-height: 640px;
+	width: 100%;
 	display: block;
 }
 
 p.image {
 	@include margin($base-spacing null 0 null);
 
+	@for $i from 1 through 10 {
+		$width: percentage($i / 10);
 
-	&.full {
+		&._#{$i * 10} {
+			img, picture {
+				width: $width;
+			}
+		}
+	}
+
+	&.v, &.vertical {
+		img, picture {
+			width: 50%;
+		}
+	}
+
+	&.vl, &.vertical-large {
 
 		img, picture {
-			max-width: 80%;
-			max-height: none;
+			width: 80%;
 		}
 	}
 }

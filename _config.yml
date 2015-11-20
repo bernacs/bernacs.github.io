@@ -19,7 +19,7 @@ collections:
     permalink: /a-beautiful-thing/:title/
 
 baseurl: ""
-url: "https://bernacs.github.io"
+url: "http://www.bernac.org"
 encoding: utf-8
 permalink: pretty
 markdown: kramdown
@@ -38,7 +38,10 @@ img_dir: assets/img
 graph_dir: assets/png/graph
 media_dir: assets/media
 
-lazyload: true
+lazyload:
+  enabled: true
+  option: lqip
+
 
 js: ['navigation.min.js', 'basic.js', 'jQuery.appear.min.js', 'stickyfill.min.js', 'lazysizes.min.js']
 
@@ -48,7 +51,7 @@ tracking: UA-69836318-1
 
 # Prose.io configuration
 prose:
-  siteurl: "https://bernacs.github.io"
+  siteurl: "http://www.bernac.org"
   media: "/assets/img"
   ignore:
     - index.html

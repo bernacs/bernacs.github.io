@@ -15,5 +15,5 @@ Video still
 
 {% include video url='https://youtu.be/_6SydqoQLB4' %}
 
-Video (2:01 excerpt)
+Video (1:23 excerpt)
 {: .caption}

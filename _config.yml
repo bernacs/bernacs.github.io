@@ -33,6 +33,7 @@ sass:
 
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 css_dir: assets/css
 js_dir: assets/js

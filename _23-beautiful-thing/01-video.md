@@ -20,6 +20,11 @@ Video still
 03:21 excerpt
 {: .caption}
 
+Credits:  
+_Framing, composition, sound, script, montage_ Sonia Bernac  
+_Camera operator_ Marcin Szupłak
+{: .caption}
+
 {% capture stars %}
 &lowast;&lowast;&lowast;
 {: .stars}

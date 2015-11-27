@@ -56,7 +56,6 @@ tracking: UA-69836318-1
 # Prose.io configuration
 prose:
   siteurl: "http://www.bernac.org"
-  media: "/assets/img"
   ignore:
     - index.html
     - /_layouts

@@ -22,6 +22,6 @@ Video (1:23 excerpt)
 {: .caption}
 
 Credits:  
-_Framing, composition, sound & montage_ Sonia Bernac  
+_Framing, composition, sound, montage_ Sonia Bernac  
 _Camera operator_ Marcin Szupłak
 {: .caption}

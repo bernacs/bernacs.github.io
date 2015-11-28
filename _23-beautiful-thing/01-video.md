@@ -21,7 +21,7 @@ Video still
 {: .caption}
 
 Credits:  
-_Framing, composition, sound, script, montage_ Sonia Bernac  
+_Montage, script, sound_ Sonia Bernac  
 _Camera operator_ Marcin Szupłak
 {: .caption}
 

@@ -20,7 +20,7 @@ Video stills
 {% include video url='https://youtu.be/tKPbkIpxLvY' %}
 
 Credits:  
-_Framing, composition, script_ Sonia Bernac  
+_Director, script_ Sonia Bernac  
 _Camera operator, montage_ Marcin Szupłak
 {: .caption}
 

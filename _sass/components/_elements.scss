@@ -172,14 +172,27 @@ video {
 // single elements
 section {
 	h1 {
+
 		span {
+			.icon {
+				@include transition(transform 0.2s ease-in-out);
+				display: inline-block;
+				height: $text-size;
+				width: $text-size;
+				vertical-align: middle;
+			}
+
 			opacity: 0;
-			@include transition (opacity 0.1s ease-in);
+			@include transition(opacity 0.2s ease-in-out);
 		}
 
 		&:hover {
 			span {
 				opacity: 1;
+
+				.icon {
+					@include transform(rotate(90deg));
+				}
 			}
 		}
 	}

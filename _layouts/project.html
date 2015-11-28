@@ -13,7 +13,7 @@ layout: default
 	{% assign slug = page.title | slugify %}
 	<section class="work" data-work="{{ slug }}">
 		<h1 id="{{ slug }}"><a href="{{ page.url }}">
-			{{ page.title }}  <span class "permalink"><i class="fa fa-link fa-flip-vertical"></i></span></a>
+			{{ page.title }}  <span class="permalink"><svg class="icon"><use xlink:href="/assets/svg/icons.svg#link"></use></svg></span></a>
 		</h1>
 		{{ content }}
 	</section>
@@ -30,7 +30,7 @@ layout: default
 	{% assign slug = work.title | slugify %}
 	<section class="work" data-work="{{ slug }}">
 		<h1 id="{{ slug }}"><a href="{{ work.url }}">
-			{{ work.title }}  <span class "permalink"><i class="fa fa-link fa-flip-vertical"></i></span></a>
+			{{ work.title }}  <span class="permalink"><svg class="icon"><use xlink:href="/assets/svg/icons.svg#link"></use></svg></span></a>
 		</h1>
 		{{ work.content | markdownify }}
 		{% unless forloop.last %}

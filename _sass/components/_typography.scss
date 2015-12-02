@@ -31,9 +31,13 @@ article h1 {
 	margin: 0;
 }
 
+@mixin align($where: left) {
+	text-align: $where;
+	text-align-last: $where;
+}
+
 p {
-	text-align: left;
-	text-align-last: left;
+	@include align(left);
 	text-justify: auto;
 	@include hyphens(auto);
 
@@ -42,19 +46,18 @@ p {
 
 p.caption {	
 	width: 80%;
-	text-align: center;
 	font-size: $caption-size;
+	@include align(center);
 
 	@include margin(($small-spacing / 2) auto null auto);
 	@include display(block);
 }
 
 p.meta {
-	// @include p.caption;
+	@include align(center);
+
 	border: 1px solid #000;
 	@include pad($small-spacing / 2);
-	text-align: center;
-	text-justify: distribute;
 	@include fill-parent;
 }
 

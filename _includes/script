@@ -32,13 +32,17 @@
   </li>
 </ul>
 
+{% unless include.nocaption %}
 Video script
 {: .caption}
+{% endunless %}
 {% else %}
 <div class="script">
   {{ en }}
 </div>
 
+{% unless include.nocaption %}
 Video script
 {: .caption}
+{% endunless %}
 {% endif %}

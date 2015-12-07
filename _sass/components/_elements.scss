@@ -272,10 +272,18 @@ p.stars {
 
 header#main {
 	@include background($header-background);
+
+	body.front & {
+		@include background(rgba($swiss-light-gray, 0.5));
+	}
 }
 
 nav {
-	@include background($header-background);	
+	@include background($header-background);
+
+	body.front & {
+		@include background(rgba($swiss-light-gray, 0.5));
+	}
 }
 
 body {

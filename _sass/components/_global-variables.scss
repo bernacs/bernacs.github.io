@@ -16,16 +16,20 @@ $body-background: rgba($swiss-light-gray, 0.1);
 
 $font-family: $helvetica;
 
+:root {
+	font-size: 16px;
+}
+
 // text
-$text-size: 16px;
+$text-size: 1rem;
 $text-line-height: 1.45;
 
 // headings
-$heading-size: 16px;
+$heading-size: 1rem;
 $heading-line-height: 1.2;
 
 // captions
-$caption-size: 0.9em;
+$caption-size: 0.9rem;
 
 // colours
 $text-colour: $swiss-dark-gray;

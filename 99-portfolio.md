@@ -5,7 +5,7 @@ permalink: /portfolio/
 exclude: yes
 ---
 
-# RSA Portfolio
+# Portfolio
 {: style="padding-top: 24px; font-size: 24px;"}
 
 <hr style="border-top: medium double #333;" />

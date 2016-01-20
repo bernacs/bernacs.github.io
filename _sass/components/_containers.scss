@@ -47,6 +47,16 @@ body {
 			}
 		}
 	}
+
+	.no-navigation {
+		@include span-columns(12);
+		position: relative;
+
+		main.content {
+			@include span-columns(9 of 12);
+			@include shift(1.5);
+		}
+	}
 }
 
 // lower elements

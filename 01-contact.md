@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-#Contact
+# Contact
 
 | email: | <a href="#"><span id="email">please enable javascript to view</span></a>
 | tel: 	 | <a href="#"><span id="tel">please enable javascript to view</span></a>

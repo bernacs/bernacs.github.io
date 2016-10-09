@@ -1,33 +1,174 @@
----
-exclude: yes
----
-{% assign projects = (site.pages | where: "layout" , "project") %}{
+{
   "__comment": "site root",
   "name": "Sonia Bernac",
-  "link": "{{ site.baseurl }}/",
-  "img": "{{ site.baseurl }}/{{ site.graph_dir }}/root.png",
+  "link": "/",
+  "img": "/assets/png/graph/root.png",
   "offset": "60",
   "linkLength": "200",
   "linkStrength": "0.5",
-  "children": [{% for project in projects %}{% assign current = forloop.index %}{% assign weight = 1 %}
+  "children": [
     {
-      "__comment": "project {{ current }} of {{ forloop.length }}",
-      "name": "{{ project.title }}",
-      "link": "{{ project.url }}",
-      "img": "{% if project.img %}{{ site.baseurl }}/{{ site.graph_dir }}/{{ project.img }}{% else %}{{ site.baseurl }}/{{ site.graph_dir }}/project.png{% endif %}",
-      "offset": "{% if project.offset %}{{ project.offset }}{% else %}65{% endif %}",
+      "__comment": "project 1 of 6",
+      "name": "Stabilisation of fluid sites",
+      "link": "/stabilisation-of-fluid-sites/",
+      "img": "/assets/png/graph/project.png",
+      "offset": "65",
       "linkLength": "",
       "linkStrength": "",
-      "children": [{% for collection in site.collections %}{% if project.url == collection[1].link %}{% assign weight = collection[1].docs | size %}{% for work in collection[1].docs %}
+      "children": [
         {
-          "__comment": "work {{ forloop.index }} of {{ forloop.length }} under project {{ current }}",
-          "name": "{{ work.title }}",
-          "link": "{{ project.url }}#{{ work.title | slugify }}",
-          "img": "{% if work.img %}{{ site.baseurl }}/{{ site.graph_dir }}/{{ work.img }}{% endif %}",
-          "offset": "{{ work.offset }}"
-        }{% unless forloop.last %},{% endunless %}{% endfor %}{% endif %}{% endfor %}
+          "__comment": "work 1 of 5 under project 1",
+          "name": "Performance",
+          "link": "/stabilisation-of-fluid-sites/#performance",
+          "img": "/assets/png/graph/fluid-performance.png",
+          "offset": "50"
+        },
+        {
+          "__comment": "work 2 of 5 under project 1",
+          "name": "Video",
+          "link": "/stabilisation-of-fluid-sites/#video",
+          "img": "/assets/png/graph/fluid-video.png",
+          "offset": "25"
+        },
+        {
+          "__comment": "work 3 of 5 under project 1",
+          "name": "Document",
+          "link": "/stabilisation-of-fluid-sites/#document",
+          "img": "/assets/png/graph/fluid-document.png",
+          "offset": "25"
+        },
+        {
+          "__comment": "work 4 of 5 under project 1",
+          "name": "Animation",
+          "link": "/stabilisation-of-fluid-sites/#animation",
+          "img": "/assets/png/graph/fluid-animation.png",
+          "offset": "25"
+        },
+        {
+          "__comment": "work 5 of 5 under project 1",
+          "name": "Print",
+          "link": "/stabilisation-of-fluid-sites/#print",
+          "img": "/assets/png/graph/fluid-print.png",
+          "offset": "35"
+        }
       ],
-      "linkWeight": "{% if project.weight %}{{ project.weight }}{% else %}{{ weight }}{% endif %}"
-    }{% unless forloop.last %},{% endunless %}{% endfor %}
+      "linkWeight": "5"
+    },
+    {
+      "__comment": "project 2 of 6",
+      "name": "Local theories of aerodynamics",
+      "link": "/local-theories-of-aerodynamics/",
+      "img": "/assets/png/graph/project.png",
+      "offset": "65",
+      "linkLength": "",
+      "linkStrength": "",
+      "children": [
+        {
+          "__comment": "work 1 of 3 under project 2",
+          "name": "Experiment 1",
+          "link": "/local-theories-of-aerodynamics/#experiment-1",
+          "img": "/assets/png/graph/experiment1.png",
+          "offset": "40"
+        },
+        {
+          "__comment": "work 2 of 3 under project 2",
+          "name": "Experiment 2",
+          "link": "/local-theories-of-aerodynamics/#experiment-2",
+          "img": "/assets/png/graph/experiment2.png",
+          "offset": "25"
+        },
+        {
+          "__comment": "work 3 of 3 under project 2",
+          "name": "Experiment 3",
+          "link": "/local-theories-of-aerodynamics/#experiment-3",
+          "img": "/assets/png/graph/experiment3.png",
+          "offset": "30"
+        }
+      ],
+      "linkWeight": "3"
+    },
+    {
+      "__comment": "project 3 of 6",
+      "name": "Encyclopedia",
+      "link": "/encyclopedia/",
+      "img": "/assets/png/graph/project.png",
+      "offset": "65",
+      "linkLength": "",
+      "linkStrength": "",
+      "children": [
+        {
+          "__comment": "work 1 of 3 under project 3",
+          "name": "The burial of a potato",
+          "link": "/encyclopedia/#the-burial-of-a-potato",
+          "img": "/assets/png/graph/potato.png",
+          "offset": "10"
+        },
+        {
+          "__comment": "work 2 of 3 under project 3",
+          "name": "Critical point of looseness",
+          "link": "/encyclopedia/#critical-point-of-looseness",
+          "img": "/assets/png/graph/critical-point.png",
+          "offset": "45"
+        },
+        {
+          "__comment": "work 3 of 3 under project 3",
+          "name": "Hideouts",
+          "link": "/encyclopedia/#hideouts",
+          "img": "/assets/png/graph/hideouts.png",
+          "offset": "30"
+        }
+      ],
+      "linkWeight": "3"
+    },
+    {
+      "__comment": "project 4 of 6",
+      "name": "A beautiful thing",
+      "link": "/a-beautiful-thing/",
+      "img": "/assets/png/graph/project.png",
+      "offset": "65",
+      "linkLength": "",
+      "linkStrength": "",
+      "children": [
+        {
+          "__comment": "work 1 of 2 under project 4",
+          "name": "Video",
+          "link": "/a-beautiful-thing/#video",
+          "img": "/assets/png/graph/beautiful-thing.png",
+          "offset": "10"
+        },
+        {
+          "__comment": "work 2 of 2 under project 4",
+          "name": "1m² of bird wire",
+          "link": "/a-beautiful-thing/#1m-of-bird-wire",
+          "img": "/assets/png/graph/birdwire.png",
+          "offset": "10"
+        }
+      ],
+      "linkWeight": "2"
+    },
+    {
+      "__comment": "project 5 of 6",
+      "name": "Snot",
+      "link": "/snot/",
+      "img": "/assets/png/graph/snot.png",
+      "offset": "20",
+      "linkLength": "",
+      "linkStrength": "",
+      "children": [
+      ],
+      "linkWeight": "1"
+    },
+    {
+      "__comment": "project 6 of 6",
+      "name": "Rot in building construction",
+      "link": "/rot-in-building-construction/",
+      "img": "/assets/png/graph/rot.png",
+      "offset": "0",
+      "linkLength": "",
+      "linkStrength": "",
+      "children": [
+      ],
+      "linkWeight": "1"
+    }
   ]
 }

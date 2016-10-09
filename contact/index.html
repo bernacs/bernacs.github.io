@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sonia Bernac</title>
+    <title>Sonia Bernac » Contact</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,8 +22,6 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.7/js/min/perfect-scrollbar.jquery.min.js"></script>
 
-<script type="text/javascript" src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
-
 
 <script type="text/javascript" src="/assets/js/navigation.min.js"></script>
 
@@ -36,8 +34,6 @@
 <script type="text/javascript" src="/assets/js/lazysizes.min.js"></script>
 
 
-<script type="text/javascript" src="/assets/js/graph.min.js"></script>
-
 <!-- analytics -->
 <script type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -49,7 +45,7 @@
   ga('send', 'pageview');
 </script>
   </head>
-  <body class="front">
+  <body >
     <div class="top-container">
     	<header id="main">
 	<h1 id="site">
@@ -62,7 +58,7 @@
 	
 		
 		<li class="page">
-			<a  href="/contact/">Contact</a>
+			<a class="active" href="/contact/">Contact</a>
 			
    		
 	 		
@@ -327,10 +323,53 @@
 	</ul>
 </nav>
     		
+        <main class="content">
+          <article>
+	<h1 id="contact">Contact</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td>email:</td>
+      <td><a href="#"><span id="email">please enable javascript to view</span></a></td>
+    </tr>
+    <tr>
+      <td>tel:</td>
+      <td><a href="#"><span id="tel">please enable javascript to view</span></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+$('#email').html(function(){
+	var e = "so",
+			f = "nia",
+			g = "@",
+			h = "ber",
+			i = "nac",
+			j = ".org",
+			k = "mailto:" + e + f + g + h + i + j;
+	$(this).parent('a').attr('href', k);
+	return e + f + g + h + i + j;
+})
+$('#tel').html(function(){
+	var l = "+44"
+			m = "7563"
+			n = "255"
+			o = "751"
+			p = l + "-" + m + "-" + n + o,
+			r = "tel:" + p;
+	$(this).parent('a').attr('href', r);
+	return l + " " + m + " " + n + o;
+})
+</script>
+
+
+</article>
+        </main>
+        
     	</div>
     </div>
-    
-    <div id="graph"></div>
     
   </body>
 </html>

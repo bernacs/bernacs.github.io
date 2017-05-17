@@ -1,5 +1,8 @@
+.DS_Store
 *~
 Gemfile.lock
 *.sublime-*
 _site/
 .sass-cache/
+.bundle/
+bundle/

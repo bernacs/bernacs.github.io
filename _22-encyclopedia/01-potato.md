@@ -36,11 +36,44 @@ Tu, Panie, w okolicy różnie mówią… Każdy to wie – kamień kamieniowi ni
 
 Jak był głód po wojnie, to niektórzy jeść próbowali. Od gotowania się miękkie robią i czerwonawe. Jeden taki, co jadł, na dwie niedziele mowę stracił i tylko leżał, w sufit patrzył, o bożym świecie nie wiedział. Doktora wzywali i nic, księdza wzywali i nic. Dopiero baba taka mądra, na ziołach znająca się, bulwy kazała z chałupy precz wynieść, izbę okadzić, a chłopu wywary jakieś dała, że mu zdrowie wróciło, ale nie ten sam był, jak mówili ludzie, jakby od środka skamieniał, serca to już do niczego nie miał – ani do roboty, ani do bab, ani do wódki nawet. I dla swoich jak jakiś obcy. Podobno się później obwiesił w lesie. A pod wisielcem – dołek ludzie znaleźli i tych bulwów kamiennych chyba z dziesięć.
 
-A inszy jeszcze jadł i śmiał się z ludzkiego gadania i jeszcze przechwalał, że smaczne i za darmo w polu leży i nic mu nie było jakiś czas. Aż którego razu tak go w kiszkach sparło, że nic… Do wychodka nie chodził przez dwa miesiące jakby mu kamieniem stanęło. Dopiero jak na pokutę na kolanach pole trzy razy obszedł i za siebie z powrotem w ziemię te bulwy rzucał, to mu odpuściło. Widać w ziemi im mus leżeć. 
+A inszy jeszcze jadł i śmiał się z ludzkiego gadania i jeszcze przechwalał, że smaczne i za darmo w polu leży i nic mu nie było jakiś czas. Aż którego razu tak go w kiszkach sparło, że nic… Do wychodka nie chodził przez dwa miesiące jakby mu kamieniem stanęło. Dopiero jak na pokutę na kolanach pole trzy razy obszedł i za siebie z powrotem w ziemię te bulwy rzucał, to mu odpuściło. Widać w ziemi im mus leżeć.
 
-Różni tu uczeni ludzie przyjeżdżali, coś kopali, mierzyli, maszynów różnych naściągali. Jeden to u sąsiada za płotem kwaterę nawet miał. A potem pojechali, jak im jednej takiej uczonej od tych kamieni rozum odjęło i goła po polu latała. Ja nie widziałem, ale mi ludzie opowiadali. Teraz coś nie przyjeżdżają. 
+Różni tu uczeni ludzie przyjeżdżali, coś kopali, mierzyli, maszynów różnych naściągali. Jeden to u sąsiada za płotem kwaterę nawet miał. A potem pojechali, jak im jednej takiej uczonej od tych kamieni rozum odjęło i goła po polu latała. Ja nie widziałem, ale mi ludzie opowiadali. Teraz coś nie przyjeżdżają.
 
 Wszędzie tu są… I na moim polu i na sąsiadów. Nie ma się co bać. Ja jak chałupę stawiałem, w fundamenty nawrzucałem. I co Pan powiesz, że mój dom i pioruny, i złodzieje, i choroby omijają? Nie ma się co bać, tylko im w ziemi mus leżeć.
 {% endcapture %}
 
 {% include script en=script_en pl=script_pl %}
+
+3D rendering and animation • 2017
+{: .meta}
+
+{% include image file='potato-render.png' %}
+
+3D model visualisation
+{: .caption}
+
+{% include image file='potato-multi.png' %}
+
+3D model visualisation
+{: .caption}
+
+<div class="video" style="height: auto; padding-bottom: inherit;">
+  <video loop autoplay>
+    <source src="{{ site.baseurl }}/{{ site.media_dir }}/potato.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+Rendered animation (low fidelity)
+{: .caption}
+
+<div class="video" style="height: auto; padding-bottom: inherit;">
+  <video controls loop autoplay>
+    <source src="{{ site.baseurl }}/{{ site.media_dir }}/hair.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+Rendered animation (low fidelity)
+{: .caption}

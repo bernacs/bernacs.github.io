@@ -8,7 +8,7 @@
   "linkStrength": "0.5",
   "children": [
     {
-      "__comment": "project 1 of 6",
+      "__comment": "project 1 of 7",
       "name": "Stabilisation of fluid sites",
       "link": "/stabilisation-of-fluid-sites/",
       "img": "/assets/png/graph/project.png",
@@ -55,7 +55,7 @@
       "linkWeight": "5"
     },
     {
-      "__comment": "project 2 of 6",
+      "__comment": "project 2 of 7",
       "name": "Local theories of aerodynamics",
       "link": "/local-theories-of-aerodynamics/",
       "img": "/assets/png/graph/project.png",
@@ -88,7 +88,7 @@
       "linkWeight": "3"
     },
     {
-      "__comment": "project 3 of 6",
+      "__comment": "project 3 of 7",
       "name": "Encyclopedia",
       "link": "/encyclopedia/",
       "img": "/assets/png/graph/project.png",
@@ -121,7 +121,7 @@
       "linkWeight": "3"
     },
     {
-      "__comment": "project 4 of 6",
+      "__comment": "project 4 of 7",
       "name": "A beautiful thing",
       "link": "/a-beautiful-thing/",
       "img": "/assets/png/graph/project.png",
@@ -147,7 +147,7 @@
       "linkWeight": "2"
     },
     {
-      "__comment": "project 5 of 6",
+      "__comment": "project 5 of 7",
       "name": "Snot",
       "link": "/snot/",
       "img": "/assets/png/graph/snot.png",
@@ -159,10 +159,22 @@
       "linkWeight": "1"
     },
     {
-      "__comment": "project 6 of 6",
+      "__comment": "project 6 of 7",
       "name": "Rot in building construction",
       "link": "/rot-in-building-construction/",
       "img": "/assets/png/graph/rot.png",
+      "offset": "0",
+      "linkLength": "",
+      "linkStrength": "",
+      "children": [
+      ],
+      "linkWeight": "1"
+    },
+    {
+      "__comment": "project 7 of 7",
+      "name": "On the revolutions of things",
+      "link": "/on-the-revolutions-of-things/",
+      "img": "/assets/png/graph/revolutions.png",
       "offset": "0",
       "linkLength": "",
       "linkStrength": "",

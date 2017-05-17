@@ -4,6 +4,11 @@
 	{% assign url = "https://youtu.be/dQw4w9WgXcQ" %}
 {% endif %}
 {% assign id = url | split: '/' | last | split: '=' | last %}
+{% if include.vimeo %}
+{% capture src %}https://player.vimeo.com/video/{{ id }}?title=0&byline=0&portrait=0{% endcapture %}
+{% else %}
+{% capture src %}https://www.youtube.com/embed/{{ id }}?rel=0&showinfo=0{% endcapture %}
+{% endif %}
 <div class="video">
-	<iframe{% if site.lazyload.enabled %} class="lazyload"{% endif %} {% if site.lazyload.enabled %}data-{% endif %}src="https://www.youtube.com/embed/{{ id }}?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+	<iframe{% if site.lazyload.enabled %} class="lazyload"{% endif %} {% if site.lazyload.enabled %}data-{% endif %}src="{{ src }}" frameborder="0" allowfullscreen></iframe>
 </div>

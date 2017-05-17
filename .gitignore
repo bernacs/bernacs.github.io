@@ -3,3 +3,6 @@ Gemfile.lock
 *.sublime-*
 _site/
 .sass-cache/
+.DS*
+bundle/
+.bundle

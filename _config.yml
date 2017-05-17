@@ -50,7 +50,7 @@ lazyload:
 
 js: ['navigation.min.js', 'basic.js', 'jQuery.appear.min.js', 'stickyfill.min.js', 'lazysizes.min.js']
 
-exclude: ['README.md','Gemfile','Gemfile.lock','.gitignore','bernac.sublime-project','bernac.sublime-workspace']
+exclude: ['README.md','Gemfile','Gemfile.lock','.gitignore','bernac.sublime-project','bernac.sublime-workspace','bundle']
 
 tracking: UA-69836318-1
 

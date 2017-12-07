@@ -1,7 +1,7 @@
 ---
 layout: narrative
-title: Test
-permalink: /test/
+title: Narrative
+permalink: /narrative/
 exclude: yes
 ---
 

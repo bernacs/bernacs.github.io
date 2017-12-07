@@ -6,6 +6,24 @@ body {
 		min-height: 100vh;
 }
 
+.narrative-container{
+	@include outer-container();
+	max-width: 600px;
+	
+	header#main {
+		@include span-columns(12);
+	}
+
+	.no-navigation {
+		main.narrative {
+			@include span-columns(12 of 12);
+			@include pad(flex-gutter(16));
+			padding-left: flex-gutter(16) / 2;
+			padding-right: flex-gutter(16) / 2;
+		}
+	}
+}
+
 .top-container {
 	@include outer-container();
 	min-width: 720px;

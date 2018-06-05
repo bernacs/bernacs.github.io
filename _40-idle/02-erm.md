@@ -1,6 +1,7 @@
 ---
 layout: work
 title: "“Erm” or the last word of a fabricator"
+img: erm.png
 offset: 0
 ---
 

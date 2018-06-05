@@ -1,7 +1,7 @@
 ---
 layout: work
 title: "The itches: a gym for public embarrassments"
-img: itchings.png
+img: gym.png
 offset: 0
 ---
 

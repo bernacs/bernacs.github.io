@@ -1,6 +1,7 @@
 ---
 layout: work
 title: "The trials of mosquitoes"
+img: mosq.png
 offset: 0
 ---
 

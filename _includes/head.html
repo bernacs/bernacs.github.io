@@ -1,4 +1,4 @@
-<title>{% if page.title %}{{ page.title | prepend: "Sonia Bernac » " }}{% else %}Sonia Bernac{% endif %}</title>
+<title>{% if page.url contains "idle-institute" %}{% if page.title %}{{ page.title | prepend: "Idle Institute » " }}{% else %}Idle Institute{% endif %}{% else %}{% if page.title %}{{ page.title | prepend: "Sonia Bernac » " }}{% else %}Sonia Bernac{% endif %}{% endif %}</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">

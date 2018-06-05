@@ -184,15 +184,36 @@
     },
     {
       "__comment": "project 8 of 8",
-      "name": "The itchings",
-      "link": "/the-itchings/",
-      "img": "/assets/png/graph/itchings.png",
-      "offset": "0",
+      "name": "Idle Institute",
+      "link": "/idle-institute/",
+      "img": "/assets/png/graph/project.png",
+      "offset": "65",
       "linkLength": "",
       "linkStrength": "",
       "children": [
+        {
+          "__comment": "work 1 of 3 under project 8",
+          "name": "The trials of mosquitoes",
+          "link": "/idle-institute/#the-trials-of-mosquitoes",
+          "img": "/assets/png/graph/mosq.png",
+          "offset": "0"
+        },
+        {
+          "__comment": "work 2 of 3 under project 8",
+          "name": "“Erm” or the last word of a fabricator",
+          "link": "/idle-institute/#erm-or-the-last-word-of-a-fabricator",
+          "img": "/assets/png/graph/erm.png",
+          "offset": "0"
+        },
+        {
+          "__comment": "work 3 of 3 under project 8",
+          "name": "The itches: a gym for public embarrassments",
+          "link": "/idle-institute/#the-itches-a-gym-for-public-embarrassments",
+          "img": "/assets/png/graph/gym.png",
+          "offset": "0"
+        }
       ],
-      "linkWeight": "1"
+      "linkWeight": "3"
     }
   ]
 }

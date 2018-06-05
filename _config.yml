@@ -17,6 +17,10 @@ collections:
     link: /a-beautiful-thing/
     output: true
     permalink: /a-beautiful-thing/:title/
+  40-idle:
+    link: /idle-institute/
+    output: true
+    permalink: /idle-institute/:title/
 
 baseurl: ""
 url: "http://www.bernac.org"

@@ -1,102 +1,111 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
 
 body {
-	color: $text-colour;
-	font-family: 'Roboto', $helvetica;
-	@include font-feature-settings('liga', 'kern', 'pnum');
-	font-size: $text-size;
-	line-height: $text-line-height;
-	text-rendering: optimizeLegibility;
+  color         : $text-colour;
+  font-family   : "Roboto", $helvetica;
+  @include font-feature-settings('liga', 'kern', "pnum");
+  font-size     : $text-size;
+  line-height   : $text-line-height;
+  text-rendering: optimizeLegibility;
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-size: $heading-size;
-	font-weight: 700;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size  : $heading-size;
+  font-weight: 700;
 
-	line-height: $heading-line-height;
-	@include margin(null null $small-spacing null);
+  line-height: $heading-line-height;
+  @include margin(null null $small-spacing null);
 
-	&#site {
-		font-weight: 400;
-		font-size: 2rem;
-		@include margin(0 0 0 0);
-	}
+  &#site {
+    font-weight: 400;
+    font-size  : 2rem;
+    @include margin(0 0 0 0);
+  }
 
-	.project-header & {
-		margin-top: 0;
-	}
+  .project-header & {
+    margin-top: 0;
+  }
 }
 
 article h1 {
-	margin: 0;
+  margin: 0;
 }
 
 @mixin align($where: left) {
-	text-align: $where;
-	text-align-last: $where;
+  text-align     : $where;
+  text-align-last: $where;
 }
 
 p {
-	@include align(left);
-	text-justify: auto;
-	@include hyphens(auto);
+  @include align(left);
+  text-justify: auto;
+  @include hyphens(auto);
 
-	@include margin(null null $base-spacing null);
+  @include margin(null null $base-spacing null);
 }
 
-p.caption {	
-	width: 80%;
-	font-size: $caption-size;
-	@include align(center);
+p.caption {
+  width    : 80%;
+  font-size: $caption-size;
+  @include align(center);
 
-	@include margin(($small-spacing / 2) auto null auto);
-	@include display(block);
+  @include margin(($small-spacing / 2) auto null auto);
+  @include display(block);
 }
 
 p.meta {
-	@include align(center);
+  @include align(center);
 
-	border: 1px solid #000;
-	@include pad($small-spacing / 2);
-	@include fill-parent;
+  border: 1px solid #000;
+  @include pad($small-spacing / 2);
+  @include fill-parent;
 }
 
 a {
-	// color: $active-text-colour;
-	color: $active-text-colour;
-	text-decoration: none;
+  // color: $active-text-colour;
+  color          : $active-text-colour;
+  text-decoration: none;
 
-	&:focus,
-	&:hover {
-		text-decoration: underline;
-	}
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
 
-	li.current-nav & {
-		color: $active-text-colour;
-		font-weight: bold;
-	}
+  li.current-nav & {
+    color      : $active-text-colour;
+    font-weight: bold;
+  }
 
-	table & {
-		color: #558a86;
-	}
+  table & {
+    color: #558a86;
+  }
 
-	&.is-active {
-		color: #558a86;
-	}
+  p & {
+    color: #558a86;
+  }
 
-	&.active {
-		font-weight: bold;
-	}
+  &.is-active {
+    color: #558a86;
+  }
+
+  &.active {
+    font-weight: bold;
+  }
 }
 
 blockquote {
-	font-style: italic;
+  font-style: italic;
 }
 
 nav {
-	//font-size: $text-size * 0.90;
+  //font-size: $text-size * 0.90;
 }
 
 .footnotes {
-	font-size: 0.85em;
+  font-size: 0.85em;
 }

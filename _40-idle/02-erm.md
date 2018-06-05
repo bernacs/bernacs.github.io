@@ -10,11 +10,25 @@ Performance • website • handmade cards w/ phrases • *FACT Gallery*, Liverp
 
 Project website available at [idle.institute/erm/](http://idle.institute/erm/).
 
+{% include image file='erm-web.png' alt='' class='vl' %}
+
+Screenshot of the website.
+{: .caption}
+
 {% include image file='erm-1.jpg' alt='' class='' %}
+
+Performance documentation.
+{: .caption}
 
 {% include image file='erm-2.jpg' alt='' class='vl' %}
 
+Performance documentation.
+{: .caption}
+
 {% include image file='erm-3.jpg' alt='' class='' %}
+
+Performance documentation.
+{: .caption}
 
 {% include image file='erm-4.jpg' alt='' class='' %}
 

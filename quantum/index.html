@@ -7,9 +7,23 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
 		<style type="text/css">
-			.row {
+			.row-2 {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
+				grid-gap: 10px;
+				text-align: center;
+			}
+
+			.row-1 {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-gap: 10px;
+				text-align: center;
+			}
+
+			.row-3 {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
 				grid-gap: 10px;
 				text-align: center;
 			}
@@ -38,16 +52,39 @@
 			</section>
 		<section></section>
 		<section>
-			<div class="row">
-				<img data-src="assets/img/kukla-2.jpg">
-				<img data-src="assets/img/11.jpg">
+			<div class="row-2">
+				<img data-src="assets/img/kukla.jpg">
+				<img data-src="assets/img/11-3.jpg">
 			</div>
 		</section>
 		<section>
-			<div class="fig-container"
-			         data-file="vis.html"></div>
+			<div class="row-2">
+				<img data-src="assets/img/11-2.jpg">
+				<img data-src="assets/img/11-1.jpg">
+			</div>
 		</section>
-		<section></section>
+		<section class="fig-container" data-file="vis.html">
+		</section>
+		<section>
+			<div class="row-2">
+				<img data-src="assets/img/comment-2.png">
+				<img data-src="assets/img/comment-3.png">
+				<img data-src="assets/img/comment-1.png" style="margin: auto; grid-column: 1 / span 2;">
+			</div>
+		</section>
+		<section>
+			<div class="row-3">
+				<img data-src="assets/img/screen-1.jpg">
+				<img data-src="assets/img/screen-2.jpg">
+				<img data-src="assets/img/screen-3.jpg">
+				<img data-src="assets/img/screen-4.jpg">
+				<img data-src="assets/img/screen-5.jpg">
+				<img data-src="assets/img/screen-6.jpg">
+				<img data-src="assets/img/screen-7.jpg">
+				<img data-src="assets/img/screen-8.jpg">
+				<img data-src="assets/img/screen-9.jpg">
+			</div>
+		</section>
 	</div>
 </div>
 <script src="lib/js/head.min.js"></script>
@@ -77,24 +114,10 @@
 			src: 'plugin/reveald3/reveald3.js'
 		}]
 	});
-	// Reveal.addEventListener( 'ready', function(event) {
-	// 	if (event.indexh != 0 && event.indexh != 2) {
-	// 		console.debug("setting bg opacity to 0.0 for slide : " + event.indexh);
-	// 		particles.style.opacity = 0.0;
-	// 	} else {
-	// 		console.debug("setting bg opacity to 1.0 for slide : " + event.indexh);
-	// 		particles.style.opacity = 1.0;
-	// 	}
-	// });
-	// Reveal.addEventListener( 'slidechanged', function(event) {
-	// 	if (event.indexh != 0 && event.indexh != 2) {
-	// 		console.debug("setting bg opacity to 0.0 for slide : " + event.indexh);
-	// 		particles.style.opacity = 0.0;
-	// 	} else {
-	// 		console.debug("setting bg opacity to 1.0 for slide : " + event.indexh);
-	// 		particles.style.opacity = 1.0;
-	// 	}
-	// });
+	Reveal.addEventListener( 'ready', function(event) {
+		var to_remove = document.querySelector('.slide-background.fig-container .slide-background-content');
+		if (to_remove != null && to_remove != undefined) to_remove.remove();
+	});
 </script>
 </body>
 </html>

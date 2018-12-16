@@ -38,6 +38,10 @@
         display: table-cell;
         margin: 50px;
     }
+
+    svg * {
+        pointer-events: all !important;
+    }
 </style>
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script type="text/javascript">
@@ -92,13 +96,7 @@ d3.json("assets/data/chain.json").then(function(graph) {
     updateGraphSize();
     window.onresize = updateGraphSize;
     var container = svg.append('g').attr('class', 'm-g');
-    svg.call(
-        d3.zoom()
-        .scaleExtent([.5, 2])
-        .on("zoom", function() {
-            container.attr("transform", d3.event.transform);
-        })
-    );
+
     var link = container.append("g").attr("class", "l-g")
         .selectAll("line")
         .data(graph.links)

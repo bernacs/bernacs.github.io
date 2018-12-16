@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Quantum Narratives of Hate</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<style type="text/css">
+			.row {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 10px;
+				text-align: center;
+			}
+		</style>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+	<div id="particle-target" class="reveal">
+		<div class="slides">
+			<section>
+				<p><b>Quantum narratives of hate:</b><br>
+					<i>algorithms of fascist utopias in the digital times</i>
+				</p>
+			</section>
+			<section>
+				<video muted autoplay loop style="height: auto; width: 80%;">
+					<source data-src="https://www.bernac.org/assets/media/show-idle-institute.mp4" type="video/mp4" />
+				</video>
+			</section>
+		<section></section>
+		<section>
+			<div class="row">
+				<img data-src="assets/img/kukla-2.jpg">
+				<img data-src="assets/img/11.jpg">
+			</div>
+		</section>
+		<section>
+			<div class="fig-container"
+			         data-file="vis.html"></div>
+		</section>
+		<section></section>
+	</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/particles.min.js"></script>
+<script>
+	var particles;
+	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+	particlesJS.load('particle-target', 'config/particles.json', function() {
+		console.log('particles.js loaded with config config/particles.json');
+		particles = document.getElementsByTagName('canvas').item(0);
+		particles.style.transition = 'opacity 1s';
+	});
+	// More info about config & dependencies:
+	// - https://github.com/hakimel/reveal.js#configuration
+	// - https://github.com/hakimel/reveal.js#dependencies
+	Reveal.initialize({
+		// width: "100%",
+		// height: "100%",
+		// margin: 0.1,
+		minScale: 0.5,
+		autoPlayMedia: true,
+		maxScale: 1.5,
+		transition: "fade",
+		controlsTutorial: false,
+		dependencies: [{
+			src: 'plugin/reveald3/reveald3.js'
+		}]
+	});
+	// Reveal.addEventListener( 'ready', function(event) {
+	// 	if (event.indexh != 0 && event.indexh != 2) {
+	// 		console.debug("setting bg opacity to 0.0 for slide : " + event.indexh);
+	// 		particles.style.opacity = 0.0;
+	// 	} else {
+	// 		console.debug("setting bg opacity to 1.0 for slide : " + event.indexh);
+	// 		particles.style.opacity = 1.0;
+	// 	}
+	// });
+	// Reveal.addEventListener( 'slidechanged', function(event) {
+	// 	if (event.indexh != 0 && event.indexh != 2) {
+	// 		console.debug("setting bg opacity to 0.0 for slide : " + event.indexh);
+	// 		particles.style.opacity = 0.0;
+	// 	} else {
+	// 		console.debug("setting bg opacity to 1.0 for slide : " + event.indexh);
+	// 		particles.style.opacity = 1.0;
+	// 	}
+	// });
+</script>
+</body>
+</html>

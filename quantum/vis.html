@@ -119,7 +119,7 @@
             .append('xhtml:div').attr('class', 'clabel')
             .append('xhtml:p').attr('class', 'label')
             .text(function(d, i) {
-                return i + " \n" + d.text;
+                return d.text;
             });
 
         node.on("mouseover", focus).on("mouseout", unfocus);

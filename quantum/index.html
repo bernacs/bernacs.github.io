@@ -1,60 +1,73 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>Quantum Narratives of Hate</title>
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
-		<style type="text/css">
-			.row-2 {
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				grid-gap: 10px;
-				text-align: center;
-			}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Quantum Narratives of Hate</title>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+	<style type="text/css">
+		.row-2 {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 10px;
+			text-align: center;
+		}
+		.row-1 {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 10px;
+			text-align: center;
+		}
+		.row-3 {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 10px;
+			text-align: center;
+		}
 
-			.row-1 {
-				display: grid;
-				grid-template-columns: 1fr;
-				grid-gap: 10px;
-				text-align: center;
-			}
-
-			.row-3 {
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
-				grid-gap: 10px;
-				text-align: center;
-			}
-		</style>
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-	<div id="particle-target" class="reveal">
-		<div class="slides">
-			<section>
-				<p><b>Quantum narratives of hate:</b><br>
-					<i>algorithms of fascist utopias in the digital times</i>
-				</p>
-			</section>
-			<section>
-				<video muted autoplay loop style="height: auto; width: 80%;">
-					<source data-src="https://www.bernac.org/assets/media/show-idle-institute.mp4" type="video/mp4" />
-				</video>
-			</section>
+		.row-5 {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			grid-gap: 10px;
+			text-align: center;
+		}
+	</style>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+	<div id="particle-target" class="reveal"><div class="slides">
+		<section>
+			<p><b>Quantum narratives of hate:</b><br>
+				<i>algorithms of fascist utopias in the digital times</i>
+			</p>
+		</section>
+		<section>
+			<img data-src="assets/img/itchings.jpg">
+		</section>
+		<section>
+			<video muted autoplay loop style="height: auto; width: 80%;">
+				<source data-src="https://www.bernac.org/assets/media/show-idle-institute.mp4" type="video/mp4" />
+			</video>
+		</section>
 		<section></section>
 		<section>
 			<div class="row-2">
-				<img data-src="assets/img/kukla.jpg">
-				<img data-src="assets/img/11-3.jpg">
+				<div>
+					<img data-src="assets/img/kukla.jpg">
+					<p style="font-size: 16pt; padding-left: 16pt; padding-right: 16pt"><i>“They are coming to kill our world, burn and rape what is ours”</i></p>
+				</div>
+				<div>
+					<img data-src="assets/img/11-3.jpg">
+					<p style="font-size: 16pt; padding-left: 16pt; padding-right: 16pt"><i>“Death to the enemies of the Fatherland!”</i></p>
+				</div>
 			</div>
 		</section>
 		<section>
@@ -66,10 +79,18 @@
 		<section class="fig-container" data-file="vis.html">
 		</section>
 		<section>
-			<div class="row-2">
-				<img data-src="assets/img/comment-2.png">
-				<img data-src="assets/img/comment-3.png">
-				<img data-src="assets/img/comment-1.png" style="margin: auto; grid-column: 1 / span 2;">
+			<div class="row-5">
+				<img data-src="assets/img/comment-2.png" style="margin: auto; grid-column: 1 / span 2;">
+				<img data-src="assets/img/comment-3.png" style="margin: auto; grid-column: span 3;">
+				<img data-src="assets/img/comment-1.png" style="margin: auto; grid-column: 2 / span 3;">
+				<img data-src="assets/img/comment-4.png" style="margin: auto">
+				<img data-src="assets/img/comment-5.png" style="margin: auto">
+				<img data-src="assets/img/comment-6.png" style="margin: auto">
+				<img data-src="assets/img/comment-7.png" style="margin: auto">
+				<img data-src="assets/img/comment-8.png" style="margin: auto; grid-column: span 2">
+				<img data-src="assets/img/comment-10.png" style="margin: auto; grid-column: 2">
+				<img data-src="assets/img/comment-11.png" style="margin: auto">
+				<img data-src="assets/img/comment-9.png" style="margin: auto; grid-column: 4">
 			</div>
 		</section>
 		<section>
@@ -86,39 +107,31 @@
 			</div>
 		</section>
 		<section></section>
-	</div>
-</div>
+	</div></div>
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
 <script src="js/particles.min.js"></script>
 <script>
-	var particles;
-	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-	particlesJS.load('particle-target', 'config/particles.json', function() {
-		console.log('particles.js loaded with config config/particles.json');
-		particles = document.getElementsByTagName('canvas').item(0);
-		particles.style.transition = 'opacity 1s';
-	});
-	// More info about config & dependencies:
-	// - https://github.com/hakimel/reveal.js#configuration
-	// - https://github.com/hakimel/reveal.js#dependencies
-	Reveal.initialize({
-		// width: "100%",
-		// height: "100%",
-		// margin: 0.1,
-		minScale: 0.5,
-		autoPlayMedia: true,
-		maxScale: 1.5,
-		transition: "fade",
-		controlsTutorial: false,
-		dependencies: [{
-			src: 'plugin/reveald3/reveald3.js'
-		}]
-	});
-	Reveal.addEventListener( 'ready', function(event) {
-		var to_remove = document.querySelector('.slide-background.fig-container .slide-background-content');
-		if (to_remove != null && to_remove != undefined) to_remove.remove();
-	});
+particlesJS.load('particle-target', 'config/particles.json', function() {});
+
+Reveal.initialize({
+	// width: "100%",
+	// height: "100%",
+	// margin: 0.1,
+	minScale: 0.5,
+	autoPlayMedia: true,
+	maxScale: 1.5,
+	transition: "fade",
+	controlsTutorial: false,
+	dependencies: [{
+		src: 'plugin/reveald3/reveald3.js'
+	}]
+});
+
+Reveal.addEventListener('ready', function(event) {
+	var to_remove = document.querySelector('.slide-background.fig-container .slide-background-content');
+	if (to_remove != null && to_remove != undefined) to_remove.remove();
+});
 </script>
 </body>
 </html>

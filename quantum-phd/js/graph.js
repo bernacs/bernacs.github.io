@@ -67,19 +67,19 @@ const constants = {
     },
     medium: {
       width: 115,
-      height: 70,
+      height: 80,
       rx: 10,
       ry: 10
     },
     small: {
       width: 90,
-      height: 50,
+      height: 70,
       rx: 10,
       ry: 10
     },
     tiny: {
       width: 70,
-      height: 25,
+      height: 35,
       rx: 10,
       ry: 10
     },

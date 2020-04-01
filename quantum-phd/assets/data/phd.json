@@ -145,9 +145,9 @@
     },
     {
       "id": "unknowings>unknown>transparency>foucault",
-      "size": "small",
+      "size": "medium",
       "class": "normal",
-      "text": "Power/knowledge. Selected interviews and other writings"
+      "text": "Power/knowledge. Selected interviews and other writings (Foucault)"
     },
 
     {
@@ -159,7 +159,7 @@
 
     {
       "id": "unknowings>allknowing>weizman",
-      "size": "small",
+      "size": "medium",
       "class": "normal",
       "text": "Warefare, fascism. The least of all possible evils (Weizman)"
     },

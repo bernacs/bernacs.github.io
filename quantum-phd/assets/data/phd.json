@@ -1,0 +1,536 @@
+{
+  "nodes": [
+    {
+      "id": "polemics",
+      "size": "medium",
+      "class": "normal",
+      "text": "Polemics with the Frankfurt School (Adorno, Reich); sensuous stir"
+    },
+    {
+      "id": "polemics>quantum_guide_perplexed",
+      "size": "small",
+      "class": "normal",
+      "text": "Quantum: A Guide for the Perplexed (Jim Al-Khelili)"
+    },
+    {
+      "id": "polemics>sensuous_intelligencies",
+      "size": "small",
+      "class": "normal",
+      "text": "Sensuous intelligencies (Lyotard, Deleuze, Golding)"
+    },
+
+    {
+      "id": "jazz_as_narrative",
+      "size": "medium",
+      "class": "normal",
+      "text": "Collective/distributed embodiment/intelligence (Jazz as a Narrative, Martin E. Rosenberg)"
+    },
+
+    {
+      "id": "problem_of_disembodiment",
+      "size": "large",
+      "class": "special",
+      "text": "The problem of disembodiment of information: what happens when we don't get rid of dialectics?"
+    },
+
+    {
+      "id": "problem_of_disembodiment>how_posthuman",
+      "size": "medium",
+      "class": "special",
+      "text": "How we became post-human (Hayles): dialectic of pattern/randomness"
+    },
+    {
+      "id": "problem_of_disembodiment>object",
+      "size": "medium",
+      "class": "normal",
+      "text": "The object of algorithm both abstract/actual (Contagious Architecture, Parisi)"
+    },
+
+    {
+      "id": "problem_of_disembodiment>eight",
+      "size": "small",
+      "class": "normal",
+      "text": "The eight technologies of otherness (Johnny Golding)"
+    },
+    {
+      "id": "problem_of_disembodiment>eight>heidegger",
+      "size": "small",
+      "class": "normal",
+      "text": "Heidegger and the Jews (Di Cesare)"
+    },
+
+    {
+      "id": "othering_algorithm",
+      "size": "small",
+      "class": "normal",
+      "text": "Othering of the algorithm"
+    },
+    {
+      "id": "othering_algorithm>algorithmic_move",
+      "size": "large",
+      "class": "normal",
+      "text": "The algoritmic move: Singularity fiction as mythotechnesis in 'Fictioning' (David Burrows, Simon O'Sullivan)"
+    },
+
+    {
+      "id": "unknowings",
+      "size": "tiny",
+      "class": "normal",
+      "text": "Unknowings"
+    },
+
+    {
+      "id": "unknowings>unknown",
+      "size": "small",
+      "class": "normal",
+      "text": "Algorithm as an unknown"
+    },
+    {
+      "id": "unknowings>unknowable",
+      "size": "small",
+      "class": "normal",
+      "text": "Algorithm as an unknowable known"
+    },
+    {
+      "id": "unknowings>allknowing",
+      "size": "medium",
+      "class": "normal",
+      "text": "Algorithm as an all-knowing unknown or a knowable known unknown"
+    },
+
+    {
+      "id": "unknowings>unknown>processes",
+      "size": "small",
+      "class": "normal",
+      "text": "Processes of strategic blackboxing"
+    },
+    {
+      "id": "unknowings>unknown>unknowing",
+      "size": "small",
+      "class": "normal",
+      "text": "Unknowing algorithms (Taina Bucher)"
+    },
+
+    {
+      "id": "unknowings>unknown>magical",
+      "size": "medium",
+      "class": "normal",
+      "text": "The magical unknown as a response to not-making-sense"
+    },
+
+    {
+      "id": "unknowings>unknown>magical>occultic",
+      "size": "medium",
+      "class": "normal",
+      "text": "Occultic fascism (The Pagan and Occult Fascist and how to fix it, Amy Hale)"
+    },
+
+    {
+      "id": "unknowings>unknown>transparency",
+      "size": "small",
+      "class": "normal",
+      "text": "The problem of transparency"
+    },
+    {
+      "id": "unknowings>unknown>transparency>pasquale",
+      "size": "small",
+      "class": "normal",
+      "text": "The Black Box Society (Pasquale)"
+    },
+    {
+      "id": "unknowings>unknown>transparency>latour",
+      "size": "small",
+      "class": "normal",
+      "text": "Pandora’s hope (Latour)"
+    },
+    {
+      "id": "unknowings>unknown>transparency>foucault",
+      "size": "small",
+      "class": "normal",
+      "text": "Power/knowledge. Selected interviews and other writings"
+    },
+
+    {
+      "id": "unknowings>unknowable>prehistory",
+      "size": "small",
+      "class": "normal",
+      "text": "A Prehistory of the Cloud (Tung-Hui Hu)"
+    },
+
+    {
+      "id": "unknowings>allknowing>weizman",
+      "size": "small",
+      "class": "normal",
+      "text": "Warefare, fascism. The least of all possible evils (Weizman)"
+    },
+
+    {
+      "id": "kinesthetic_act",
+      "size": "large",
+      "class": "normal",
+      "text": "Changing mind as a kinesthetic act (Lucretious I: An ontology of motion, Thomas Nail)"
+    },
+    {
+      "id": "swerve",
+      "size": "small",
+      "class": "normal",
+      "text": "Notion of swerve (The Swerver, Greenblatt)"
+    },
+
+    {
+      "id": "kinesthetic_act>node",
+      "size": "node",
+      "class": "normal",
+      "text": ""
+    },
+    {
+      "id": "kinesthetic_act>node>anamaterialism",
+      "size": "small",
+      "class": "normal",
+      "text": "Anamaterialism (Golding)"
+    },
+    {
+      "id": "kinesthetic_act>node>transmaterialities",
+      "size": "small",
+      "class": "normal",
+      "text": "Transmaterialities (Barad)"
+    },
+    {
+      "id": "kinesthetic_act>node>strange_materiality",
+      "size": "small",
+      "class": "normal",
+      "text": "Strange materiality of information (Rovelli)"
+    },
+
+    {
+      "id": "reciprocity",
+      "size": "small",
+      "class": "normal",
+      "text": "Reciprocity of information (Rovelli)"
+    },
+
+    {
+      "id": "storytelling_benjamin",
+      "size": "small",
+      "class": "normal",
+      "text": "Information / Storytelling (Walter Benjamin)"
+    },
+    {
+      "id": "storytelling_coding",
+      "size": "medium",
+      "class": "normal",
+      "text": "Double rearticulation of storytelling as coding, and coding as storytelling"
+    },
+    {
+      "id": "reflection_fiction",
+      "size": "medium",
+      "class": "normal",
+      "text": "'I lie, I speak', 'Reflection, fiction' (Foucault/Blanchot)"
+    },
+
+    {
+      "id": "storytelling_coding>fictioning",
+      "size": "small",
+      "class": "normal",
+      "text": "Fictioning (David Burrows, Simon O'Sullivan)"
+    },
+
+    {
+      "id": "storytelling_coding>fascism",
+      "size": "large",
+      "class": "normal",
+      "text": "Fascism as a pathological way of (en)coding/storytelling, f(n), not as a thing in itself"
+    },
+    {
+      "id": "storytelling_coding>fascism>logic_of_sense",
+      "size": "small",
+      "class": "normal",
+      "text": "Logic of sense (Deleuze)"
+    },
+    {
+      "id": "storytelling_coding>fascism>algorithms",
+      "size": "small",
+      "class": "normal",
+      "text": "Algorithms and discontinuous logic (Laruelle)"
+    },
+    {
+      "id": "storytelling_coding>fascism>mutation",
+      "size": "medium",
+      "class": "normal",
+      "text": "Mutation, self-revolutionising Organs without Bodies (Žižek)"
+    },
+    {
+      "id": "storytelling_coding>fascism>polemics",
+      "size": "medium",
+      "class": "normal",
+      "text": "Polemics with Julia Ebner, The Secret Social Lives of Extremists"
+    },
+    {
+      "id": "storytelling_coding>fascism>contagion",
+      "size": "tiny",
+      "class": "normal",
+      "text": "Contagion"
+    },
+    {
+      "id": "storytelling_coding>fascism>contagion>parisi",
+      "size": "small",
+      "class": "normal",
+      "text": "Informatics (Contagious Architecture, Parisi)"
+    },
+    {
+      "id": "storytelling_coding>fascism>contagion>kucharski",
+      "size": "small",
+      "class": "normal",
+      "text": "Mathematics (The rules of contagion, Adam Kucharski)"
+    },
+
+    {
+      "id": "formula_1",
+      "size": "wide",
+      "class": "image",
+      "text": "Formula 1",
+      "file": "assets/svg/formula_1.svg"
+    },
+    {
+      "id": "formula_2",
+      "size": "wider",
+      "class": "image",
+      "text": "Formula 2",
+      "file": "assets/svg/formula_2.svg"
+    }
+  ],
+  "links": [
+    {
+      "source": "problem_of_disembodiment",
+      "target": "formula_1",
+      "group": 1
+    },
+    {
+      "source": "problem_of_disembodiment",
+      "target": "formula_2",
+      "group": 1
+    },
+
+    {
+      "source": "polemics",
+      "target": "polemics>quantum_guide_perplexed",
+      "group": 0
+    },
+    {
+      "source": "polemics",
+      "target": "polemics>sensuous_intelligencies",
+      "group": 0
+    },
+    {
+      "source": "polemics",
+      "target": "jazz_as_narrative",
+      "group": 0
+    },
+    {
+      "source": "jazz_as_narrative",
+      "target": "problem_of_disembodiment",
+      "group": 0
+    },
+    {
+      "source": "problem_of_disembodiment>how_posthuman",
+      "target": "problem_of_disembodiment",
+      "group": 0
+    },
+    {
+      "source": "problem_of_disembodiment",
+      "target": "problem_of_disembodiment>object",
+      "group": 0
+    },
+    {
+      "source": "problem_of_disembodiment",
+      "target": "problem_of_disembodiment>eight",
+      "group": 0
+    },
+    {
+      "source": "problem_of_disembodiment>eight",
+      "target": "problem_of_disembodiment>eight>heidegger",
+      "group": 0
+    },
+
+    {
+      "source": "problem_of_disembodiment",
+      "target": "reciprocity",
+      "group": 0
+    },
+    {
+      "source": "problem_of_disembodiment",
+      "target": "storytelling_benjamin",
+      "group": 0
+    },
+    {
+      "source": "storytelling_benjamin",
+      "target": "storytelling_coding",
+      "group": 0
+    },
+    {
+      "source": "storytelling_coding",
+      "target": "reflection_fiction",
+      "group": 0
+    },
+    {
+      "source": "jazz_as_narrative",
+      "target": "kinesthetic_act",
+      "group": 0
+    },
+    {
+      "source": "kinesthetic_act",
+      "target": "kinesthetic_act>node",
+      "group": 0
+    },
+    {
+      "source": "kinesthetic_act",
+      "target": "swerve",
+      "group": 0
+    },
+    {
+      "source": "kinesthetic_act>node",
+      "target": "kinesthetic_act>node>anamaterialism",
+      "group": 0
+    },
+    {
+      "source": "kinesthetic_act>node",
+      "target": "kinesthetic_act>node>transmaterialities",
+      "group": 0
+    },
+    {
+      "source": "kinesthetic_act>node",
+      "target": "kinesthetic_act>node>strange_materiality",
+      "group": 0
+    },
+    {
+      "source": "kinesthetic_act",
+      "target": "reciprocity",
+      "group": 0
+    },
+    {
+      "source": "problem_of_disembodiment",
+      "target": "othering_algorithm",
+      "group": 0
+    },
+    {
+      "source": "othering_algorithm",
+      "target": "othering_algorithm>algorithmic_move",
+      "group": 0
+    },
+    {
+      "source": "othering_algorithm",
+      "target": "unknowings",
+      "group": 0
+    },
+    {
+      "source": "unknowings",
+      "target": "unknowings>unknown",
+      "group": 0
+    },
+    {
+      "source": "unknowings",
+      "target": "unknowings>unknowable",
+      "group": 0
+    },
+    {
+      "source": "unknowings",
+      "target": "unknowings>allknowing",
+      "group": 0
+    },
+    {
+      "source": "unknowings>unknown",
+      "target": "unknowings>unknown>processes",
+      "group": 0
+    },
+    {
+      "source": "unknowings>unknown",
+      "target": "unknowings>unknown>unknowing",
+      "group": 0
+    },
+    {
+      "source": "unknowings>unknown",
+      "target": "unknowings>unknown>magical",
+      "group": 0
+    },
+    {
+      "source": "unknowings>unknown>magical",
+      "target": "unknowings>unknown>magical>occultic",
+      "group": 0
+    },
+    {
+      "source": "unknowings>unknown",
+      "target": "unknowings>unknown>transparency",
+      "group": 0
+    },
+    {
+      "source": "unknowings>unknown>transparency",
+      "target": "unknowings>unknown>transparency>pasquale",
+      "group": 0
+    },
+    {
+      "source": "unknowings>unknown>transparency",
+      "target": "unknowings>unknown>transparency>latour",
+      "group": 0
+    },
+    {
+      "source": "unknowings>unknown>transparency",
+      "target": "unknowings>unknown>transparency>foucault",
+      "group": 0
+    },
+    {
+      "source": "unknowings>unknowable",
+      "target": "unknowings>unknowable>prehistory",
+      "group": 0
+    },
+    {
+      "source": "unknowings>allknowing",
+      "target": "unknowings>allknowing>weizman",
+      "group": 0
+    },
+    {
+      "source": "storytelling_coding",
+      "target":  "storytelling_coding>fictioning",
+      "group": 0
+    },
+    {
+      "source": "storytelling_coding",
+      "target":  "storytelling_coding>fascism",
+      "group": 0
+    },
+    {
+      "source": "storytelling_coding>fascism",
+      "target":  "storytelling_coding>fascism>logic_of_sense",
+      "group": 0
+    },
+    {
+      "source": "storytelling_coding>fascism",
+      "target":  "storytelling_coding>fascism>algorithms",
+      "group": 0
+    },
+    {
+      "source": "storytelling_coding>fascism",
+      "target":  "storytelling_coding>fascism>mutation",
+      "group": 0
+    },
+    {
+      "source": "storytelling_coding>fascism",
+      "target":  "storytelling_coding>fascism>polemics",
+      "group": 0
+    },
+    {
+      "source": "storytelling_coding>fascism",
+      "target":  "storytelling_coding>fascism>contagion",
+      "group": 0
+    },
+    {
+      "source": "storytelling_coding>fascism>contagion",
+      "target":  "storytelling_coding>fascism>contagion>parisi",
+      "group": 0
+    },
+    {
+      "source": "storytelling_coding>fascism>contagion",
+      "target":  "storytelling_coding>fascism>contagion>kucharski",
+      "group": 0
+    }
+  ]
+}

@@ -21,24 +21,11 @@
 
     {
       "id": "jazz_as_narrative",
-      "size": "medium",
+      "size": "large",
       "class": "normal",
       "text": "Collective/distributed embodiment/intelligence (Jazz as a Narrative, Martin E. Rosenberg)"
     },
 
-    {
-      "id": "problem_of_disembodiment",
-      "size": "large",
-      "class": "special",
-      "text": "The problem of disembodiment of information: what happens when we don't get rid of dialectics?"
-    },
-
-    {
-      "id": "problem_of_disembodiment>how_posthuman",
-      "size": "medium",
-      "class": "special",
-      "text": "How we became post-human (Hayles): dialectic of pattern/randomness"
-    },
     {
       "id": "problem_of_disembodiment>object",
       "size": "medium",
@@ -285,29 +272,41 @@
     },
 
     {
-      "id": "formula_1",
-      "size": "wide",
-      "class": "image",
-      "text": "Formula 1",
-      "file": "assets/svg/formula_1.svg"
+      "id": "formulas_distancer",
+      "size": "node",
+      "class": "special",
+      "text": ""
     },
     {
-      "id": "formula_2",
-      "size": "wider",
+      "id": "formulas",
+      "size": "xlarge",
       "class": "image",
-      "text": "Formula 2",
-      "file": "assets/svg/formula_2.svg"
+      "text": "Formulas",
+      "file": "assets/svg/formulas.svg"
+    },
+
+    {
+      "id": "problem_of_disembodiment",
+      "size": "large",
+      "class": "special",
+      "text": "The problem of disembodiment of information: what happens when we don't get rid of dialectics?"
+    },
+    {
+      "id": "problem_of_disembodiment>how_posthuman",
+      "size": "medium",
+      "class": "special",
+      "text": "How we became post-human (Hayles): dialectic of pattern/randomness"
     }
   ],
   "links": [
     {
       "source": "problem_of_disembodiment",
-      "target": "formula_1",
+      "target": "formulas_distancer",
       "group": 1
     },
     {
-      "source": "problem_of_disembodiment",
-      "target": "formula_2",
+      "source": "formulas_distancer",
+      "target": "formulas",
       "group": 1
     },
 

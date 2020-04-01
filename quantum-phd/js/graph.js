@@ -11,7 +11,7 @@ function getWindowSize() {
     width: x,
     height: y
   };
-};
+}
 
 function updateGraphSize() {
   const window_size = getWindowSize();
@@ -19,23 +19,23 @@ function updateGraphSize() {
     .attr("width", window_size.width)
     .attr("height", window_size.height)
     .attr("viewBox", "0 0 " + window_size.width + " " + window_size.height);
-};
+}
 
 updateGraphSize();
 window.onresize = updateGraphSize;
 
 const constants = {
   bounds: {
-    radius: 0,
+    radius: 10,
     active: true
   },
   link: {
-    distance: 100,
-    strength: 0.5
+    distance: 90,
+    strength: 0.8
   },
   physics: {
-    charge_strength: -50,
-    collision_radius: 20
+    charge_strength: -65,
+    collision_radius: 60
   },
   opacity: {
     full: 0.9,
@@ -59,8 +59,14 @@ const constants = {
       rx: 10,
       ry: 10
     },
+    xlarge: {
+      width: 250,
+      height: 160,
+      rx: 10,
+      ry: 10
+    },
     large: {
-      width: 120,
+      width: 125,
       height: 80,
       rx: 10,
       ry: 10
@@ -180,6 +186,13 @@ d3.json("assets/data/phd.json").then(graph => {
   // formulas
   // H(x) = \mathbb{E}_{x \sim P}\left[I(x) \right ] = -\mathbb{E}_{x \sim P}\left[\log P(x)) \right ]
   // H = -\sum_i p_i \log_b p_i
+  //
+  // \begin{align*}
+  // \mathbb{X} &= \left\{ x_1, ..., x_n \right\}, X = \{x, x \in \mathbb{X}\} \\
+  // H(X) &= - \sum_{x \in \mathbb{X}} p(x) \log_b p(x) \\
+  // &= \sum_{x \in \mathbb{X}} p(x) I(x)) \\
+  // &= \mathbb{E}_X \left[I(x)\right]
+  // \end{align*}
 
   node
     .filter(d => d.class == "image")

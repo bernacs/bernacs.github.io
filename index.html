@@ -18,8 +18,7 @@
 	<style>
 	body {
 		width: 100vw;
-		height: 100vh;
-		overflow: hidden;
+		margin-top: 25vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -40,6 +39,10 @@
 		text-align: center;
 	}
 	
+	p.statement {
+		hyphens: auto;
+	}
+	
 	p.role span {
 		white-space: nowrap;
 	}
@@ -50,8 +53,11 @@
 <h1>Sonia Bernac <span>(Bernaciak)</h1>
 <p class="role">PhD Candidate, Royal College of Art</p>
 <p class="role">Researcher in Artificial and Distributed Intelligence, <span>AiDesign Lab</span>, <span>Royal College of Art</span> & <span>Hong Kong Polytechnic University</span>
-<p><a href="#"><span id="email">please enable javascript to view</span></a></p>
-<p><i>The website is being updated.</i></p>
+<p><a href="#"><span id="email">please enable javascript to view the email address.</span></a></p>
+<!--<p><i>The website is being updated.</i></p>-->
+<p class="statement">
+Sonia Bernac investigates ontological frustrations of old and new materialisms, teratologies of synthetic beings, intuitions of science-fiction, and medieval systems of knowledge. Her work, framed as a bestiary of distributed intelligence, makes sense of algorithmically clustered wisdom(s), murmurations of data and generative AI. Without equating non-human with inhumane, she pays particular attention to the emergence of pathological systemic forms: exclusionary, compulsive or sadistic imagining. She is a researcher, writer and artist at the Royal College of Art.
+</p>
 <script>
 const e = document.getElementById("email");
 const t = [115, 111, 110, 105, 97, 46, 98, 101, 114, 110, 97, 99, 105, 97, 107, 64, 110, 101, 116, 119, 111, 114, 107, 46, 114, 99, 97, 46, 97, 99, 46, 117, 107].map(i => String.fromCharCode(i)).join("");
